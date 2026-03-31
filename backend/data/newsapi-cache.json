@@ -1,0 +1,1147 @@
+{
+  "v": 1,
+  "entries": {
+    "6d26907f78ebd3ef23fd290e": {
+      "fetchedAt": "2026-03-31T14:51:07.014Z",
+      "sourceId": "bbc-news",
+      "articles": [
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "Becky Morton",
+          "title": "Cut taxes on energy bills before giving bailouts, Kemi Badenoch says",
+          "description": "The Tory leader refuses to rule out direct payments to households if bills spike but says this would come at a cost.",
+          "url": "https://www.bbc.co.uk/news/articles/c1d941vw172o",
+          "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ef06/live/1fa644b0-2b59-11f1-8c3a-a5a96d0e4227.jpg",
+          "publishedAt": "2026-03-29T11:12:33Z",
+          "content": "Asked who should get support if energy costs rise, Badenoch told the BBC's Sunday with Laura Kuenssberg programme she wanted to see the government \"taking the burden off everybody\" by reducing taxes … [+1661 chars]"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "Lina Sinjab",
+          "title": "Three Lebanese journalists killed in Israeli strike, employers say",
+          "description": "The Israeli military confirms it killed Ali Shoeib from the Hezbollah-affiliated Al Manar TV.",
+          "url": "https://www.bbc.co.uk/news/articles/cgme1j70294o",
+          "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cfbf/live/63449610-2ac1-11f1-934f-036468834728.jpg",
+          "publishedAt": "2026-03-28T17:48:44Z",
+          "content": "It said he had worked to \"expose the locations of IDF soldiers operating in southern Lebanon and along the border\", including during the current fighting, and had used his position \"to disseminate He… [+1059 chars]"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "Adam Goldsmith",
+          "title": "'I was naive', says minister who quit over Labour Together claims",
+          "description": "Josh Simons resigned after facing claims a think tank he used to run commissioned a report into journalists' backgrounds.",
+          "url": "https://www.bbc.co.uk/news/articles/cy8135ny182o",
+          "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0a7d/live/821ff560-2ad1-11f1-8beb-eb755b382e29.jpg",
+          "publishedAt": "2026-03-28T17:01:55Z",
+          "content": "Separately, Simons told BBC Newscast he had repeatedly warned those at the top of Meta about the risks of AI technology when he worked there between 2018-2022.\r\nHe was speaking days after a Los Angel… [+1198 chars]"
+        }
+      ]
+    },
+    "f3fbe5ca1ee2cbcc1212991a": {
+      "fetchedAt": "2026-03-31T14:23:53.709Z",
+      "sourceId": "reuters",
+      "articles": []
+    },
+    "0c20e2331624ba962e7ba554": {
+      "fetchedAt": "2026-03-31T14:23:54.712Z",
+      "sourceId": "the-new-york-times",
+      "articles": []
+    },
+    "68f642e69b578dd5cd75db77": {
+      "fetchedAt": "2026-03-31T14:23:55.713Z",
+      "sourceId": "financial-times",
+      "articles": []
+    },
+    "3aa3a078c6dfaca0c5be3728": {
+      "fetchedAt": "2026-03-31T14:23:56.716Z",
+      "sourceId": "the-guardian-uk",
+      "articles": []
+    },
+    "ad4ce566f0b12b4d62fed763": {
+      "fetchedAt": "2026-03-31T14:51:08.021Z",
+      "sourceId": "cnn",
+      "articles": [
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Louis Leeson",
+          "title": "Deported by ICE, then sent straight to the Ukrainian military | CNN",
+          "description": "Immediately after crossing the border into Ukraine following his deportation from the United States, Anton Smovzh was picked up by Ukrainian military draft officers and sent straight to a training center",
+          "url": "https://www.cnn.com/2026/03/30/world/video/ukrainian-ice-deported-military-war-vrtc-ldn-digvid",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/118270-ukraineicedeportees-vrtc-clean-00-00-26-09-still001.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T14:52:38.0411791Z",
+          "content": "A recent IQAir report named Loni, India, as the most polluted city in the world last year. Neighboring New Delhi was also the worlds most polluted capital. Residents say breathing is difficult, and t… [+66 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "John Towfighi",
+          "title": "3 graphics show how the war in Iran is roiling markets",
+          "description": "The war in Iran has jolted financial markets, sending oil prices surging and stocks and bonds falling.",
+          "url": "https://www.cnn.com/2026/03/30/business/us-stocks-oil-iran",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2266129240.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T07:00:56Z",
+          "content": "The war in Iran has jolted financial markets, sending oil prices surging and stocks and bonds falling.\r\nThe market gyrations can be dizzying. Heres a look at how the Middle East conflict has impacted… [+1936 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Danya Gainor, Chris Lau, Anna Chernova",
+          "title": "Trump allows Russian oil tanker to reach Cuba, breaking his fuel blockade of island",
+          "description": "A Russian-flagged oil tanker reportedly reached Cuba on Monday after US President Donald Trump allowed it to break his administration’s fuel blockade of the island nation as its energy crisis deepens.",
+          "url": "https://www.cnn.com/2026/03/30/americas/us-russian-oil-tanker-access-cuba-intl-hnk",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267926295.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T04:00:13Z",
+          "content": "A Russian-flagged oil tanker reportedly reached Cuba on Monday after US President Donald Trump allowed it to break his administrations fuel blockade of the island nation as its energy crisis deepens.… [+2946 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Tal Shalev, Jeremy Diamond",
+          "title": "Israeli military suspends battalion involved in assaulting, detaining CNN crew in West Bank",
+          "description": "The Israeli military’s top general suspended all operational activities of a reserve battalion involved in the detention and assault of a CNN team in the West Bank last week – including dismissing one soldier from military service – the Israeli military said …",
+          "url": "https://www.cnn.com/2026/03/29/middleeast/idf-suspends-battalion-assaulting-cnn-crew-in-west-bank-intl",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-israeli-soldier-in-a-palestinian-home.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-29T22:49:21Z",
+          "content": "The Israeli militarys top general suspended all operational activities of a reserve battalion involved in the detention and assault of a CNN team in the West Bank last week including dismissing one s… [+4298 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Andrew Kaczynski",
+          "title": "The Trump-voting pastor Democrats think could cost them a chance at a Nebraska Senate seat | CNN Politics",
+          "description": "In Nebraska’s Senate race, a Trump-supporting, anti-abortion pastor is running as a Democrat. The state’s Democratic Party — which is backing an independent candidate — says he’s a Republican plant. And another Democratic primary candidate says she’s running …",
+          "url": "https://www.cnn.com/2026/03/30/politics/nebraska-senate-trump-pastor",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/08-ap24232814677225.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T09:00:55Z",
+          "content": "In Nebraskas Senate race, a Trump-supporting, anti-abortion pastor is running as a Democrat. The states Democratic Party which is backing an independent candidate says hes a Republican plant. And ano… [+6399 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Hanna Ziady",
+          "title": "Oil climbs above $116 after Trump says he wants to ‘take the oil’ in Iran | CNN Business",
+          "description": "Oil prices rose Monday, with Brent crude crossing $116 a barrel, after comments by US President Donald Trump sparked fears that the Middle East conflict may escalate further.",
+          "url": "https://www.cnn.com/2026/03/30/business/oil-prices-rise-116-iran-intl",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-12t203331z-446739296-rc2z0karsd02-rtrmadp-3-iran-crisis-oil-products.JPG?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T08:46:40Z",
+          "content": "Oil prices rose Monday, with Brent crude crossing $116 a barrel, after comments by US President Donald Trump sparked fears that the Middle East conflict may escalate further.\r\nBrent crude, the global… [+3088 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Mustafa Qadri, Issy Ronald, Magdalena Sofia Vitores Moreno, Charlotte Reck, Kosta Gak, Sana Noor Haq, Adam Pourahmadi, Eugenia Yosef, Catherine Nicholls, Mostafa Salem, Nadeen Ebrahim, Hanna Ziady, Helen Regan, Laura Sharman, Abbas Al Lawati, John Towfighi, Jessie Yeung, Eyad Kourdi, Brad Lendon, Isaac Yee, Thomas Bordeaux, Alicia Wallace, Todd Symons, Riane Lumer, Aileen Graef",
+          "title": "Live updates: Iran war news, Trump threatens to ‘obliterate’ Iran’s energy sources, Tehran calls US plan ‘unrealistic’",
+          "description": "President Donald Trump said the US may blow up and completely obliterate Iran’s electric plants and oil wells if a deal to end the war is not reached. Follow for live updates.",
+          "url": "https://www.cnn.com/2026/03/30/world/live-news/iran-war-us-israel-trump",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-652566478-20260330105126772.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-30T04:40:12Z",
+          "content": "Job growth was lackluster last year in the United States, but signs of stabilization, if not a rebound, were starting to emerge.\r\nNow, the expanding conflict in the Middle East not only interrupts th… [+1397 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Auzinea Bacon",
+          "title": "Oil prices climb after Iran warns against US ground invasion | CNN Business",
+          "description": "Oil prices climbed Sunday after Tehran warned against a US ground invasion, despite President Donald Trump saying on Friday that negotiations would continue to end the war.",
+          "url": "https://www.cnn.com/2026/03/29/business/oil-prices-iran-war",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267815419.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-29T22:20:10Z",
+          "content": "Oil prices climbed Sunday after Tehran warned against a US ground invasion, despite President Donald Trump saying on Friday that negotiations would continue to end the war.\r\nBrent crude, the global b… [+2125 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Tim Lister",
+          "title": "Israel bars church leaders from Palm Sunday mass ‘for the first time in centuries,’ church says | CNN",
+          "description": "For the first time in centuries, Catholic leaders have been barred from Jerusalem’s Church of Holy Sepulchre on Palm Sunday, according to church authorities in the holy city.",
+          "url": "https://www.cnn.com/2026/03/29/middleeast/israel-jerusalem-church-barred-intl",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-29t072833z-1761948569-rc26eka7kind-rtrmadp-3-religion-easter-jerusalem-palm-sunday.JPG?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-29T14:32:52Z",
+          "content": "For the first time in centuries, Catholic leaders have been barred from Jerusalems Church of Holy Sepulchre on Palm Sunday, according to church authorities in the holy city.\r\nThe Latin Patriarchate i… [+4223 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Mostafa Salem, Leila Gharagozlou",
+          "title": "Iran’s nuclear program: Cornered and wounded, will Tehran now race for a bomb?",
+          "description": "When Iran’s covert nuclear program came to international attention over two decades ago, Tehran insisted that its intentions were peaceful and that it had no plans to develop nuclear weapons.",
+          "url": "https://www.cnn.com/2026/03/29/middleeast/iran-nuclear-bomb-analysis-intl",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2263198554.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-29T10:02:07Z",
+          "content": "When Irans covert nuclear program came to international attention over two decades ago, Tehran insisted that its intentions were peaceful and that it had no plans to develop weapons.\r\nThe countrys th… [+5639 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Associated Press",
+          "title": "James Tolkan: Actor in ‘Top Gun’ and ‘Back to the Future’ dies at 94",
+          "description": "Actor James Tolkan, known for his roles as a cigar-chomping naval commander in “Top Gun” and a gruff high school administrator in “Back to the Future,” has died. He was 94.",
+          "url": "https://www.cnn.com/2026/03/28/entertainment/james-tolkan-actor-obit-hnk",
+          "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1570510710.jpg?c=16x9&q=w_800,c_fill",
+          "publishedAt": "2026-03-29T03:20:08Z",
+          "content": "Actor James Tolkan, known for his roles as a cigar-chomping naval commander in Top Gun and a gruff high school administrator in Back to the Future, has died. He was 94.\r\nTolkan died Thursday in Lake … [+1370 chars]"
+        },
+        {
+          "source": {
+            "id": "cnn",
+            "name": "CNN"
+          },
+          "author": "Abbas Al Lawati, CNN",
+          "title": "Iran has a new demand to end the war – and it could bring in billions",
+          "description": "When an Iranian official this week laid out a list of demands to end the war started by the United States and Israel, he added an item that hadn’t been on...",
+          "url": "https://www.cnn.com/2026/03/28/middleeast/iran-strait-of-hormuz-toll-intl",
+          "urlToImage": "https://s.yimg.com/os/en/cnn_articles_875/f79f3786198f814c5679456384ff091b",
+          "publishedAt": "2026-03-28T15:12:58Z",
+          "content": "When an Iranian official this week laid out a list of demands to end the war started by the United States and Israel, he added an item that hadnt been on Tehrans list before: recognition of Irans sov… [+7363 chars]"
+        }
+      ]
+    },
+    "c62234ffec5a59df6c5bc51f": {
+      "fetchedAt": "2026-03-31T14:51:09.029Z",
+      "sourceId": "the-verge",
+      "articles": [
+        {
+          "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+          },
+          "author": "Andrew Webster",
+          "title": "Xbox’s next big games showcase happens on June 7th",
+          "description": "It may be the end of March, but gaming companies are already getting ready for the summer. First up is Xbox, which just announced that it will be holding its next major showcase event on June 7th. That's a typical window for Microsoft - last year's edition to…",
+          "url": "https://www.theverge.com/games/903282/xbox-games-showcase-2026-sgf-date",
+          "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/ss_69e3d0306642df35e85de5114caea664c516c408.1920x1080.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "publishedAt": "2026-03-30T13:18:57Z",
+          "content": "<ul><li></li><li></li><li></li></ul>\r\nExpect news on Gears of War, Fable, and Halo.\r\nExpect news on Gears of War, Fable, and Halo.\r\nby\r\nAndrew WebsterClose\r\nSenior entertainment editor\r\nPosts from th… [+2676 chars]"
+        },
+        {
+          "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+          },
+          "author": "Verge Staff",
+          "title": "Apple @ 50",
+          "description": "Fifty years ago, on April 1st, 1976, Apple Computer Company was founded. Today it’s one of the most valuable companies in the world, celebrated for producing ubiquitous products like the iPad and iPhone to now-nostalgia bait like the iPod Mini and PowerBook. …",
+          "url": "https://www.theverge.com/tech/899623/apple-50-anniversary",
+          "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268248_APPLE_50_PACKAGE_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "publishedAt": "2026-03-30T13:05:16Z",
+          "content": "Fifty years ago, on April 1st, 1976, Apple Computer Company was founded. Today it’s one of the most valuable companies in the world, celebrated for producing ubiquitous products like the iPad and iPh… [+2432 chars]"
+        },
+        {
+          "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+          },
+          "author": "Patrick McGee",
+          "title": "The origin story of Apple’s long-running relationship with FoxConn",
+          "description": "In 2025, Patrick McGee published Apple in China: The Capture of the World's Greatest Company, a deeply-reported look at the tech giant's investment in - and growing reliance on - China. The following excerpt, pulled from Chapter 9 of Apple in China, examines …",
+          "url": "https://www.theverge.com/tech/898077/apple-in-china-patrick-mcgee-foxconn",
+          "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268248_APPLE_50_FOXCONN_CVirginia_ef8fef.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "publishedAt": "2026-03-29T17:17:34Z",
+          "content": "<ul><li></li><li></li></ul>\r\nThe origin story of Apples long-running relationship with FoxConn\r\nAn excerpt from Patrick McGees Apple in China.\r\nby\r\nPatrick McGeeClose\r\nPosts from this author will be … [+14189 chars]"
+        }
+      ]
+    },
+    "4110197512743f75de083733": {
+      "fetchedAt": "2026-03-31T14:51:10.037Z",
+      "sourceId": "associated-press",
+      "articles": [
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "The Associated Press",
+          "title": "Photos show effects of Iran war on global energy worldwide",
+          "description": "Iran’s attacks on the energy infrastructure of the Middle East and its stranglehold on the Strait of Hormuz has sent oil prices skyrocketing and given rise to growing concerns about a global energy crisis.",
+          "url": "https://apnews.com/photo-gallery/iran-war-global-energy-crisis-0e48cb06f3e04e18bc7c80444fff7664",
+          "urlToImage": "https://dims.apnews.com/dims4/default/ee50667/2147483647/strip/true/crop/4988x3324+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fba%2F63%2F8a9bded5396b684c7704843ddc73%2F64dfa6294b034183ae8c45d32956afd2",
+          "publishedAt": "2026-03-30T11:58:10Z",
+          "content": "Liberia-flagged tanker Shenlong Suezmax, carrying crude oil from Saudi Arabia, that arrived clearing the Strait of Hormuz, is seen at the Mumbai Port in Mumbai, India, Thursday, March 12, 2026. (AP P… [+18 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Suman Naishadham",
+          "title": "Spain's airspace off-limits to US planes in Iran war",
+          "description": "Spain’s defense minister says the country has closed its airspace to U.S. planes involved in the Iran war. Spain had already said the U.S. could not use jointly operated military bases in the country for operations related to the conflict. Defense Minister Ma…",
+          "url": "https://apnews.com/article/trump-spain-united-states-iran-war-05e23ef4e0bda9cb226a16b10cd9437c",
+          "urlToImage": "https://dims.apnews.com/dims4/default/83c21af/2147483647/strip/true/crop/5673x3780+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F21%2Fda%2F71015cc5697390aeeac1c0e2c326%2F2c5795094cac4d0d9845ec3d5fddb504",
+          "publishedAt": "2026-03-30T11:48:15Z",
+          "content": "MADRID (AP) Spain has closed its airspace to U.S. planes involved in the Iran war, Defense Minister Margarita Robles said Monday, marking another step in the countrys opposition to the U.S. and Israe… [+1218 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Jon Gambrell, David Rising",
+          "title": "Trump mulls seizing Iranian island even as diplomatic talks appear to be moving ahead",
+          "description": "President Donald Trump openly mused about seizing Iran’s Kharg Island oil terminal in the Persian Gulf and the United States and Israel kept up their attacks on the Islamic Republic, even as there were signs of progress in nascent ceasefire talks. Tehran, mea…",
+          "url": "https://apnews.com/article/iran-us-israel-trump-lebanon-march-30-2026-8abb0ee50be4cd8dd9ddde3a9d846ef8",
+          "urlToImage": "https://dims.apnews.com/dims4/default/734dbce/2147483647/strip/true/crop/2433x1621+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2c%2F55%2F67ce512e30f04d46db251971ede4%2Fe6ab98e0d8a14e51b3f36ee1d94adb46",
+          "publishedAt": "2026-03-30T05:50:04Z",
+          "content": "DUBAI, United Arab Emirates (AP) President Donald Trump openly mused about seizing Irans Kharg Island oil terminal in the Persian Gulf and the United States and Israel kept up their attacks Monday on… [+6024 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Darlene Superville",
+          "title": "Trump says he has 'no problem' with Russian oil tanker bringing relief to Cuba",
+          "description": "President Donald Trump says he has “no problem” with a Russian oil tanker off the coast of Cuba delivering relief to the island, which has been brought to its knees by a U.S. oil blockade. “We have a tanker out there. We don’t mind having somebody get a boatl…",
+          "url": "https://apnews.com/article/cuba-trump-russia-oil-shipment-b6845987728e28d5d762992840ca6b69",
+          "urlToImage": "https://dims.apnews.com/dims4/default/1bbf84c/2147483647/strip/true/crop/3390x2259+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fd4%2Fda%2F40ac14ee96feaea4db22e6739016%2F573a3894a3d84c59a2961144a1162412",
+          "publishedAt": "2026-03-30T01:34:17Z",
+          "content": "ABOARD AIRFORCE ONE (AP) President Donald Trump on Sunday night said he has no problem with a Russian oil tanker off the coast of Cuba delivering relief to the island, which has been brought to its k… [+2624 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "David Cohen",
+          "title": "Live updates: Trump suggests US could take Iran’s Kharg Island",
+          "description": "U.S. President Donald Trump has raised the idea of American forces seizing Iran’s Kharg Island, its main oil terminal in the Persian Gulf.",
+          "url": "https://apnews.com/live/iran-war-israel-trump-03-30-2026",
+          "urlToImage": "https://dims.apnews.com/dims4/default/b4399a0/2147483647/strip/true/crop/8640x5757+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe2%2Fc2%2F2d5faf90a504903fe5c83a6be098%2F57bcda7095364e28befec97639458491",
+          "publishedAt": "2026-03-30T00:21:00Z",
+          "content": "U.S. President Donald Trump has raised the idea of American forces seizing Irans Kharg Island, its main oil terminal in the Persian Gulf.\r\nThe comment by Trump came in an interview published early Mo… [+565 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Rob Gillies",
+          "title": "Air Canada says its CEO will retire after his English-only crash message faced criticism",
+          "description": "Air Canada says its CEO, Michael Rousseau, plans to retire. He had faced criticism over an English-only condolence message after a deadly crash this month at New York’s LaGuardia Airport. On Monday, the airline based in French-speaking Quebec said Rousseau to…",
+          "url": "https://apnews.com/article/air-canada-ceo-crash-english-french-resign-02da899607c92b8ecb31dc01085e4980",
+          "urlToImage": "https://dims.apnews.com/dims4/default/33cb97b/2147483647/strip/true/crop/3062x2040+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa6%2F63%2Fe220cc06be307a8c567358df7aab%2F8c0d50eee39b4678b070e26f10ed1f1b",
+          "publishedAt": "2026-03-30T14:33:21Z",
+          "content": "TORONTO (AP) Air Canada announced Monday its CEO will retire later this year, after Michael Rousseau was criticized for his English-only message of condolence following this months deadly crash in Ne… [+1476 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Justin Spike",
+          "title": "Youth-led push for change threatens Orban's 16-year rule...",
+          "description": "Two weeks before pivotal elections, Hungary’s young voters are rallying behind Péter Magyar’s Tisza party and posing the strongest challenge to Prime Minister Viktor Orbán in years. Polls show Tisza dominates among voters under 30, while older voters are with…",
+          "url": "https://apnews.com/article/hungary-election-youth-voters-orban-58e71836ef9e3a38bc478bdbde9ca0b0",
+          "urlToImage": "https://dims.apnews.com/dims4/default/7591215/2147483647/strip/true/crop/8256x5501+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F30%2F20d9531928cda03a81eaecda5ce5%2F3bd747d6d9d94ef7b274f17a64837161",
+          "publishedAt": "2026-03-30T11:43:36Z",
+          "content": "BUDAPEST, Hungary (AP) A group of friends in their mid-20s campaigned door to door last week in a small Hungarian city, supporting a political movement that soon could end Prime Minister Viktor Orbán… [+6144 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": null,
+          "title": "Unknown gunmen kill more than 70 in South Sudan after a dispute at a gold mine",
+          "description": "Gunmen have killed more than 70 people in South Sudan after a dispute at a gold mining site near the capital, Juba. On Police confirmed the deaths and said many others were wounded. A video shared online showed dozens of bodies on open ground. A local journal…",
+          "url": "https://apnews.com/article/south-sudan-gold-mine-jebel-iraq-deaths-juba-d7f2d7954df7275add92f3017d565947",
+          "urlToImage": "https://dims.apnews.com/dims4/default/295c329/2147483647/strip/true/crop/675x450+12+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png",
+          "publishedAt": "2026-03-30T11:09:33Z",
+          "content": "JUBA, South Sudan (AP) Gunmen killed more than 70 people in South Sudan over a gold mining row on the outskirts of the capital over the weekend, a police spokesperson confirmed on Monday.\r\nA video of… [+1725 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Peony43",
+          "title": "New study says AI is giving bad advice to flatter its users | AP News",
+          "description": "Artificial intelligence chatbots are so prone to flattering and validating their human users that they are giving bad advice that can damage relationships and reinforce harmful behaviors, according to a new study that explores the dangers of AI telling people…",
+          "url": "https://apnews.com/article/ai-sycophancy-chatbots-science-study-8dc61e69278b661cab1e53d38b4173b6",
+          "urlToImage": "https://dims.apnews.com/dims4/default/c259555/2147483647/strip/true/crop/5517x3676+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8f%2F24%2Fb86aaee79b0fb0a8fce160f2cbe1%2F63a776f22bce4e97894bf83f0ffa3cb1",
+          "publishedAt": "2026-03-30T05:47:01Z",
+          "content": "Artificial intelligence chatbots are so prone to flattering and validating their human users that they are giving bad advice that can damage relationships and reinforce harmful behaviors, according t… [+7501 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "walterbell",
+          "title": "Midnight train from GA: A view of America from the tracks as airports struggle",
+          "description": "Long security lines at airports are driving people crazy as Congress and President Donald Trump try to work out a budget stalemate. Some travelers are seeking out alternative ways of getting where they need to go. And one option is the train. Railroads are am…",
+          "url": "https://apnews.com/article/airports-shutdown-long-lines-train-travel-amtrak-e4d8ea591b3b036142c2bf2dee7dff5a",
+          "urlToImage": "https://dims.apnews.com/dims4/default/149a411/2147483647/strip/true/crop/3000x1999+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F04%2F68%2F72e00113c3530d36a250b0f72f4a%2Faeb496a9d767468cbb4d748f0e178233",
+          "publishedAt": "2026-03-29T20:00:02Z",
+          "content": "ABOARD THE CRESCENT (AP) Theres something melodic about watching the sun rise over a rural stillness broken only by the rhythms of steel wheels on tracks. Or so we tell ourselves.\r\nIn this case, bein… [+7474 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "ap news",
+          "title": "Pope Leo Palm Sunday Mass: God rejects prayers of leaders who wage wars...",
+          "description": "Pope Leo XIV says no one can use God to justify war and he's praying especially for Christians in the Middle East. He used his Palm Sunday homily to call Jesus the “king of peace” who rejects violence. He says God does not listen to the prayers of those who w…",
+          "url": "https://apnews.com/article/vatican-palm-sunday-francis-pope-5749906e8c5d5303b1fb06e33607e062",
+          "urlToImage": "https://dims.apnews.com/dims4/default/f39c01d/2147483647/strip/true/crop/2186x1457+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F09%2F8e%2Fde433ca31e3b8c183278e42b90de%2F5791cfc757134561b264490c6635ba2d",
+          "publishedAt": "2026-03-29T14:00:14Z",
+          "content": "ROME (AP) Pope Leo XIV on Sunday rejected claims that God justifies war , as he prayed especially for Christians in the Middle East during a Palm Sunday Mass before tens of thousands of people in St.… [+4874 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Melanie Lidman",
+          "title": "Subdued Passover and Easter in Jerusalem as Iran war rages",
+          "description": "Jerusalem’s major holy sites are shuttered and the mood ahead of Passover and Easter is subdued as the Iran war rages on, now in its fifth week. Metal shutters are drawn on nearly all stores in the Old City, and only scattered footsteps echo on deserted stone…",
+          "url": "https://apnews.com/article/israel-iran-war-easter-passover-jerusalem-83dd39fc7f931970230542339cd1b827",
+          "urlToImage": "https://dims.apnews.com/dims4/default/4fbeadb/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe1%2Fe2%2Fb1d5d3d037b8791aeb9724a724e1%2Fb2e9bd07d3ce4532be008d4e7deeb992",
+          "publishedAt": "2026-03-29T08:28:21Z",
+          "content": "JERUSALEM (AP) Jerusalems major holy sites are shuttered and families are dejected and exhausted ahead of Passover and Easter as the Iran war enters its fifth week. The mood stands in stark contrast … [+6079 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Samy Magdy",
+          "title": "Middle East war intensifies with first strikes by Houthis",
+          "description": "A top Iranian official has warned the U.S. against any ground invasion as regional diplomats meet in Pakistan in a push to end the war. Foreign ministers from Saudi Arabia, Turkey and Egypt are expected to meet again Monday in Islamabad. Meanwhile, Israeli Pr…",
+          "url": "https://apnews.com/article/iran-us-israel-trump-lebanon-march-29-2026-26caaef651be1cb4d482b29adaa2d600",
+          "urlToImage": "https://dims.apnews.com/dims4/default/734dbce/2147483647/strip/true/crop/2433x1621+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2c%2F55%2F67ce512e30f04d46db251971ede4%2Fe6ab98e0d8a14e51b3f36ee1d94adb46",
+          "publishedAt": "2026-03-29T05:15:40Z",
+          "content": "ISLAMABAD, Pakistan (AP) A top Iranian official warned the U.S. against a ground invasion, saying its troops would be set on fire, as regional diplomats met Sunday in Pakistan in hopes of opening dir… [+5112 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Paul Wiseman",
+          "title": "Global economic optimism dims as the Iran war drags on",
+          "description": "U.S. and Israeli attacks on Iran have darkened the outlook for the world economy. The conflict has driven up oil, natural gas and fertilizer prices and sent global stock markets reeling. Developing countries have been forced to ration fuel and subsidize energ…",
+          "url": "https://apnews.com/article/iran-us-israel-war-global-economy-oil-1bcb0c616c5ca2e1b6a903c2cd64a4e4",
+          "urlToImage": "https://dims.apnews.com/dims4/default/88d413d/2147483647/strip/true/crop/7850x5231+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F30%2Fbc%2F8636e6b5e30050d2a35fcdeb088c%2Fdc58944723d3463dbba2c35ede126cc9",
+          "publishedAt": "2026-03-29T04:05:00Z",
+          "content": "WASHINGTON (AP) U.S. and Israeli attacks on Iran have driven up prices, darkened the outlook for the world economy, sent global stock markets reeling and forced developing countries to ration fuel an… [+7164 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Associated Press",
+          "title": "Russia is sending upgraded drones used in the Ukraine war to Iran, officials say",
+          "description": "Moscow and Tehran inked a $1.7 billion drone deal in 2022, with production at Russia’s Alabuga plant.",
+          "url": "https://apnews.com/article/russia-iran-drones-shahed-war-israel-ukraine-840b4f885d99714bdb7813c0d56213cf",
+          "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2026/03/124595545.jpg?quality=75&strip=all&w=1200",
+          "publishedAt": "2026-03-28T16:43:38Z",
+          "content": "LONDON Russia is sending a shipment of drones to Iran including upgraded versions of the drone technology that Tehran originally supplied to Moscow after its invasion of Ukraine, U.S. and European of… [+6297 chars]"
+        },
+        {
+          "source": {
+            "id": "associated-press",
+            "name": "Associated Press"
+          },
+          "author": "Steven Sloan",
+          "title": "Embellishments, exaggerations, falsehoods...",
+          "description": "President Donald Trump describes the war with Iran as a success, even as his message about the conflict keeps shifting. Trump says the United States is winning even as he sends more troops to the Middle East. He blames other countries for not helping the Amer…",
+          "url": "https://apnews.com/article/trump-iran-war-conflicting-messages-f9269cc4fe1cee914501b68ec5b6c217",
+          "urlToImage": "https://dims.apnews.com/dims4/default/f61771f/2147483647/strip/true/crop/5207x3470+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fec%2F32%2F8c7c403470c27a14cffb3522605d%2F20d2361524064cdd9ae7631c33025d3e",
+          "publishedAt": "2026-03-28T15:04:38Z",
+          "content": "WASHINGTON (AP) President Donald Trump says the United States is winning the war with Iran even as thousands of additional American troops deploy to the Middle East.\r\nHe has pilloried other countries… [+6815 chars]"
+        }
+      ]
+    },
+    "7087091198df43765f3d59c7": {
+      "fetchedAt": "2026-03-31T14:51:11.044Z",
+      "sourceId": "al-jazeera-english",
+      "articles": [
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "Rubio tells Al Jazeera Strait of Hormuz will reopen ‘one way or another’",
+          "description": "This is a breaking news story.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/rubio-tells-al-jazeera-strait-of-hormuz-will-reopen-one-way-or-another",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69ca84d134-1774879953.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T14:21:00Z",
+          "content": "United States Secretary of State Marco Rubio has told Al Jazeera that the Strait of Hormuz will reopen one way or another amid the war with Iran.\r\nThe exclusive interview on Monday came as speculatio… [+1325 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Sarah Shamim",
+          "title": "Trump wants to ‘take Iran’s oil’: Can he, and what would that mean?",
+          "description": "Trump said US forces could seize Iran’s oil export hub at Kharg Island as the war enters its second month.",
+          "url": "https://www.aljazeera.com/economy/2026/3/30/trump-wants-to-take-irans-oil-can-he-and-what-would-that-mean",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/afp_69ca67248284-1774872356.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T14:20:09Z",
+          "content": "United States President Donald Trump said on Sunday that he wishes to take the oil in Iran, as the US-Israel war against Iran enters its second month.\r\nOn Monday, President Trump threatened to target… [+6119 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Spain closes airspace to US planes involved in war on Iran",
+          "description": "The announcement comes after Madrid refused to let Washington use jointly operated military bases for the war on Iran.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/spain-closes-airspace-to-us-planes-involved-in-war-on-iran",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69ca71c656-1774875078.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T13:23:35Z",
+          "content": "Spain has closed its airspace to planes of the United States involved in the US-Israel war on Iran, the latest step in the countrys opposition to the conflict.\r\nDefence Minister Margarita Robles conf… [+1833 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Why have the US and Israel bombed more than 75 Iranian police facilities?",
+          "description": "An Al Jazeera investigation finds internal security facilities in populated areas have been heavily targeted.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/why-have-the-us-and-israel-bombed-more-than-75-iranian-police-facilities",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-04T105441Z_1776043551_RC22XJAIW1R4_RTRMADP_3_IRAN-CRISIS-1774869273.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T12:54:15Z",
+          "content": "In the densely populated neighbourhoods of southern Tehran, the 11th Criminal Investigation Base once stood as a mundane symbol of local law enforcement. Its detectives investigated economic crimes, … [+6391 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Abid Hussain",
+          "title": "Trump ‘pretty sure’ of Iran deal, but can Pakistan-led efforts end the war?",
+          "description": "Pakistan, Saudi Arabia, Turkiye and Egypt set up a team for backchannel talks with the US and Iran.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/trump-pretty-sure-of-iran-deal-but-can-pakistan-led-efforts-end-the-war",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/four-FMs-meeting-1774861362.jpeg?resize=1920%2C1288",
+          "publishedAt": "2026-03-30T12:23:26Z",
+          "content": "Islamabad, Pakistan When the foreign ministers of Saudi Arabia, Turkiye and Egypt landed in Islamabad over the weekend, it marked the second meeting in less than two weeks of a diplomatic track worki… [+13762 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Priyanka Shankar",
+          "title": "Schools, water, industry: What civilian targets have US, Israel, Iran hit?",
+          "description": "US and Israel have increasingly been hitting civilian sites in Iran as efforts to end the weeks-long war are under way.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/schools-water-industry-what-civilian-targets-have-us-israel-iran-hit",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-06T020129Z_1674236106_RC2VWJAP41NA_RTRMADP_3_IRAN-CRISIS-USA-SCHOOL-1773850618.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T11:09:06Z",
+          "content": "Since launching their military offensive on Iran on February 28, the United States and Israel have carried out thousands of strikes across the Middle East nation of about 90 million people, targeting… [+13303 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Maram Humaid",
+          "title": "Land Day in Gaza: Between memory and the fight for what remains",
+          "description": "In Gaza, Land Day highlights transformation from historical land rights to survival under war, siege and displacement.",
+          "url": "https://www.aljazeera.com/features/2026/3/30/land-day-in-gaza-between-memory-and-the-fight-for-what-remains",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/873A3867-1774794160.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T10:03:22Z",
+          "content": "Gaza City, Gaza Strip Inside a tent pitched on a small patch of land, Sawsan al-Jadba sits with her children on the final strip of her property, just metres away from the rest of her seized land.\r\nBe… [+8120 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Iraq risks Arab ties as Iran-aligned groups strike Gulf nations",
+          "description": "Joint Arab condemnation of cross-border attacks exposes Baghdad’s failure to control armed proxies on its soil.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/iraq-risks-arab-ties-as-iran-aligned-groups-strike-gulf-nations",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2016/11/d5707c86630b4097ad64b7b2e91265f6_18.jpeg?resize=1200%2C675",
+          "publishedAt": "2026-03-30T09:57:31Z",
+          "content": "In the shadow of the ongoing United States-Israel war on Iran, the deserts of Iraq have transformed into a staging ground for a secondary conflict. Drones and missiles launched by Iran-aligned armed … [+4385 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Ted Regencia, Zaid Sabah",
+          "title": "Iran war live: Indian worker killed in Kuwait; Israel downs Houthi drones",
+          "description": "Kuwait says an Indian worker has been killed in an Iranian raid as attacks across Gulf continue.",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/3/30/iran-war-live-worker-killed-in-kuwait-israel-intercepts-drones-from-yemen",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/AFP__20260329__A64D2EG__v2__HighRes__TopshotSaudiIranUsIsraelWar-1774825683.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T00:00:44Z",
+          "content": "blinking-dot\r\nLive updatesLive updates, \r\nKuwait says an Indian worker has been killed in an Iranian raid on a power and desalination plant as attacks across Gulf continue."
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "War on Iran disrupts Asia’s used-car exports to the Middle East",
+          "description": "The US-Israel war on Iran has lead to disruptions in Asia’s used-car exporting industry.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/war-on-iran-disrupts-asias-used-car-exports-to-the-middle-east",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774877909.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T13:40:59Z",
+          "content": "NewsFeed\r\nThe US-Israel war on Iran has lead to disruptions in Asias used-car exporting industry, with the closure of the Strait of Hormuz blocking their access to the Middle Eastern market."
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Palestinian recalls brother’s arrest at the Rafah crossing",
+          "description": "A Palestinian man’s long-awaited return to Gaza ended in anguish after Israel detained his brother at the Rafah crossing",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/palestinian-recalls-brothers-arrest-at-the-rafah-crossing",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774874860.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T12:47:53Z",
+          "content": "NewsFeed\r\nA Palestinian mans long-awaited return to Gaza ended in anguish after Israeli forces detained his brother at the Rafah crossing."
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Homes damaged as Iranian missiles trigger sirens across northern Israel",
+          "description": "Missile debris from Iranian launches struck parts of central and northern Israel, damaging multiple areas.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/homes-damaged-as-iranian-missiles-trigger-sirens-across-northern-israel",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774874312.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T12:38:42Z",
+          "content": "NewsFeed\r\nMissile debris from Iranian launches struck parts of central and northern Israel, damaging multiple areas."
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Iran’s Foreign Ministry denies claims of US-Iran negotiations",
+          "description": "Iran’s foreign ministry denied claims of negotiations with the US.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/irans-foreign-ministry-denies-claims-of-us-iran-negotiations",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/widestill-1774874062.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T12:38:37Z",
+          "content": "NewsFeed\r\nIn a press briefing, the spokesperson for Irans foreign ministry denied claims of negotiations with the US and stated that Iran was not involved in a Pakistan-led diplomatic effort to end t… [+6 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Russia’s FSB orders British diplomat’s expulsion, UK rejects ‘intimidation’",
+          "description": "Russia’s intelligence agency accuses the second secretary at the British Embassy in Moscow of espionage.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/russia-expels-british-diplomat-accused-of-economic-espionage",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69ca4e4065-1774865984.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T11:20:33Z",
+          "content": "Russias Federal Security Service (FSB) has ordered a British diplomat to leave the country within two weeks over allegations of economic espionage, which the United Kingdom rejected as unacceptable a… [+2114 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Beirut apartment damaged in Israeli strike",
+          "description": "An Israeli air strike has heavily damaged a residential building in Beirut’s southern suburbs.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/beirut-apartment-damaged-in-israeli-strike",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774869034.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T11:10:41Z",
+          "content": "NewsFeed\r\nAn Israeli air strike has heavily damaged a residential building in Beiruts southern suburbs, scattering rubble and crushing cars. Israel says its relentless attacks target Hezbollah, as mo… [+98 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Sirens heard across Haifa port",
+          "description": "Sirens were heard across the port of Haifa on Monday, amid expectations of incoming missiles.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/sirens-heard-across-haifa-port",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774868943.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T11:10:18Z",
+          "content": "NewsFeed\r\nSirens were heard across the port of Haifa on Monday, amid expectations of incoming missiles. The Israeli military reported heightened alerts following Iranian missile launches, while force… [+62 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "Syria’s al-Sharaa visits Germany to talk reconstruction, return of refugees",
+          "description": "President aims to address refugee repatriation and Syria's rebuilding during high-level meetings in Berlin.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/syrian-president-in-berlin-for-talks-with-germanys-merz",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69ca451b39-1774863643.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T10:56:47Z",
+          "content": "Interim Syrian President Ahmed al-Sharaa has been received by German President Frank-Walter Steinmeier in Berlin before talks with Chancellor Friedrich Merz on rebuilding his country and the return o… [+2510 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Refaat Ibrahim",
+          "title": "Green and Yellow: Two lines that separate me from my land",
+          "description": "Israel can draw as many lines as it wants, but we will not give up the right to our land.",
+          "url": "https://www.aljazeera.com/opinions/2026/3/30/green-and-yellow-two-lines-that-separate-me-from-my-land",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/1000013761-1774858842.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T10:53:40Z",
+          "content": "It is Land Day today in Palestine, a day when we commemorate our special bond with the Palestinian land. And I cannot help but think about my grandfather, his dispossession, and the repetition of tha… [+5250 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Mariamne Everett",
+          "title": "Palestine aIly Ireland under fire for allowing weapons transfers to Israel",
+          "description": "Since the Iraq War, Shannon Airport has served as a key transit hub for the US military. It is now under scrutiny again.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/palestine-aily-ireland-under-fire-for-allowing-weapons-transfers-to-israel",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2025-02-09T154711Z_1234161250_RC21RCA66EDO_RTRMADP_3_ISRAEL-PALESTINIANS-IRELAND-1774439087.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T10:41:45Z",
+          "content": "In November, three activists from Palestine Action Eire crashed a modified van through a barrier at Shannon Airport, drove onto the runway towards a United States military aircraft and sprayed green … [+8499 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Smoke rise from Beirut suburbs following Israeli attack",
+          "description": "Smoke billows above buildings in Beirut’s southern suburbs after Israeli strike.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/smoke-rise-from-beirut-suburbs-following-israeli-attack",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774862647.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T09:24:51Z",
+          "content": "NewsFeed\r\nSmoke billows above buildings in Beiruts southern suburbs after a strike that followed Israeli warnings targeting the area. The neighbourhood has been largely emptied after residents were f… [+91 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Trump wants to invade Iran to seize oil, calls US objectors ‘stupid people’",
+          "description": "The Trump administration has deployed US Marines in preparation for the possible takeover of Iran's key oil export hub.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/trump-wants-to-invade-iran-to-seize-oil-calls-us-objectors-stupid",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/afp_69ca1e331ecf-1774853683.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T09:00:44Z",
+          "content": "United States President Donald Trump has said he wants to take the oil in Iran by seizing its export hub of Kharg Island, a plan being opposed in the US by some stupid people.\r\nIn an interview with t… [+4241 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "UN peacekeeper killed in southern Lebanon as Israeli invasion intensifies",
+          "description": "Indonesian peacekeeper has been confirmed killed in artillery fire as Israeli invasion of southern Lebanon intensifies.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/un-peacekeeper-killed-as-israel-hezbollah-fighting-escalates-in-lebanon",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/afp_69ca26b290e7-1774855858.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T08:54:46Z",
+          "content": "The United Nations Interim Force in Lebanon (UNIFIL) has confirmed one of its peacekeepers was killed in the countrys south as fighting between Israeli troops and the Hezbollah group intensifies amid… [+3364 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "‘This is a nightmare scenario if it escalates further.’",
+          "description": "Elisabeth Kendall says the Houthi attack on Israel demonstrated a willingness to carry out their threats",
+          "url": "https://www.aljazeera.com/video/quotable/2026/3/30/this-is-a-nightmare-scenario-if-it-escalates-further",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/widethumb-1774859437.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T08:31:45Z",
+          "content": "Quotable\r\nThis is a nightmare scenario if it escalates further.\r\nElisabeth Kendall, President of Girton College at the University of Cambridge, says the Houthi attack on Israel demonstrated a willing… [+94 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Daniel Levy",
+          "title": "Did Israel miscalculate in launching the war on Iran?",
+          "description": "Like in other conflicts, Israel launched the war on Iran together with the US without a realistic political plan.",
+          "url": "https://www.aljazeera.com/opinions/2026/3/30/did-israel-miscalculate-in-launching-the-war-on-iran",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-25T134314Z_340509604_RC2U7KANSWTQ_RTRMADP_3_IRAN-CRISIS-ISRAEL-POLITICS-1774855152.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T08:13:40Z",
+          "content": "In recent days, alongside continued claims of successes in this war, a new tone is emerging in Israels media, piercing the Israeli sense of invincibility the first hints of a narrative of defeat.\r\nWr… [+8070 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "US-Israel war on Iran: What’s happening on day 31 of attacks",
+          "description": "While Trump has talked about diplomacy, fears of a ground invasion in Iran loom as US troops arrive in the region.",
+          "url": "https://www.aljazeera.com/economy/2026/3/30/us-israel-war-on-iran-whats-happening-on-day-31-of-attacks",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69ca0ef5d7-1774849781.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T07:15:46Z",
+          "content": "US-Israeli overnight strikes hit Tehran and other cities, with power infrastructure targeted in the Iranian capital, as the conflict causes upheaval in global stock and oil markets.\r\nThe attacks caus… [+5961 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "Mohamed Salah warned against US move as MLS clubs eye Egyptian footballer",
+          "description": "Egyptian official says Liverpool star will fade away if he opts for the MLS as San Diego FC owner welcomes compatriot.",
+          "url": "https://www.aljazeera.com/sports/2026/3/30/mohamed-salah-warned-against-us-move-as-mls-clubs-eye-egyptian-footballer",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-18T200306Z_1090042670_UP1EM3I1JP440_RTRMADP_3_SOCCER-CHAMPIONS-LIV-GS-1774849614.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T06:31:39Z",
+          "content": "Egypts national team director Ibrahim Hassan has cautioned Mohamed Salah against moving to Major League Soccer (MLS) after he leaves Liverpool at the end of the season, as it would see the forward fa… [+3020 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Settlers burn vehicles in town near Hebron",
+          "description": "Video shows vehicles set on fire in the town of ad-Dhahiriya, near Hebron, during an attack by Israeli settlers.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/settlers-burn-vehicles-in-town-near-hebron",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774851599.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T06:20:39Z",
+          "content": "NewsFeed\r\nVideo shows vehicles set on fire in the town of ad-Dhahiriya, near Hebron, during an attack by Israeli settlers. Settler violence has escalated across the occupied West Bank in recent weeks… [+51 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Mohammed Haddad",
+          "title": "Land Day: What happened in Palestine on March 30, 1976?",
+          "description": "Fifty years ago, six unarmed Palestinians were killed and over 100 were injured protesting Israel’s land confiscations.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/land-day-what-happened-in-palestine-on-march-30-1976",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/03/2023-03-30T101355Z_185795673_RC2940AOPLRR_RTRMADP_3_ISRAEL-PALESTINIANS-LAND-DAY-1743340264.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T06:18:21Z",
+          "content": "Every year on March 30, Palestinians observe Land Day, or Yom al-Ard, recalling the events of 50 years ago when on March 30, 1976, six unarmed Palestinians were killed by Israeli forces, and more tha… [+3902 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Fayha Shalash",
+          "title": "By the 50th anniversary of Land Day, Palestinians lose most of their land",
+          "description": "Palestinians still face illegal Israeli settlement expansions, land seizures and restrictions on access to their land.",
+          "url": "https://www.aljazeera.com/features/2026/3/30/by-the-50th-anniversary-of-land-day-palestinians-lose-most-of-their-land",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/download-1774783026.jpg?resize=1200%2C630",
+          "publishedAt": "2026-03-30T05:54:38Z",
+          "content": "It was a devastating experience for Abdul Rahman Azzam, 65, to recently cut down the olive trees he had planted decades ago on his land south of Jenin in the occupied West Bank, following an Israeli … [+10488 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "‘We’re killing them, bro’: Israelis correct Iranian online streamer",
+          "description": "Iranian musician thanks young Israeli women for ‘saving’ Iran through US-Israeli air strikes.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/were-killing-them-bro-israelis-correct-iranian-online-streamer",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/WIDE-THUMB-Israelis-correct-Iranian-musician-abroad-1774850000.png?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T05:54:18Z",
+          "content": "NewsFeed\r\nA video of this online live chat has gone viral in which a pro-monarchy Iranian musician thanks young Israeli women for saving Iran through US-Israeli air strikes. His confused guests respo… [+52 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Trump says Iran’s ‘had regime change’ as he describes ‘boatloads of oil’",
+          "description": "US President Donald Trump says the US-Israeli war on Iran has effectively brought ‘regime change’.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/trump-says-irans-had-regime-change-as-he-describes-boatloads-of-oil",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/TRUMP-AIR-FORCE-ONE-CLEAN-wide-1774847982.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T05:20:03Z",
+          "content": "NewsFeed\r\nUS President Donald Trump says the US-Israeli war on Iran has effectively brought regime change, claiming key leadership layers were decimated. Trump added Iran wont have a country if they … [+32 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "John Power",
+          "title": "Australia to halve fuel tax as global energy crisis deepens",
+          "description": "Prime Minister Anthony Albanese announces the tax cut as the price of crude oil tops $116 a barrel.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/australia-to-halve-fuel-tax-as-global-energy-crisis-deepens",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-30T024934Z_470611509_RC2PEKA9CILP_RTRMADP_3_IRAN-CRISIS-FUEL-AUSTRALIA-1774839925_6b62e3-1774841842.jpg?resize=1200%2C630&quality=80",
+          "publishedAt": "2026-03-30T04:47:36Z",
+          "content": "Australias government will slash petrol and diesel taxes by half amid a surge in fuel prices prompted by the US-Israel war on Iran.\r\nAustralian Prime Minister Anthony Albanese made the announcement o… [+2586 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "CAF general secretary quits amid AFCON final controversy",
+          "description": "Veron Mosengo-Omba's resignation follows the fallout over the CAF board's decision to strip Senegal of the AFCON title.",
+          "url": "https://www.aljazeera.com/sports/2026/3/30/caf-general-secretary-quits-amid-afcon-final-controversy",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/GettyImages-2268902192-1774837390.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T02:58:14Z",
+          "content": "The Confederation of African Football (CAF)s general secretary, Veron Mosengo-Omba, resigned on Sunday after repeated calls for his removal and at a turbulent time for the game on the continent.\r\nMos… [+2985 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "IAEA says Iran’s Khondab heavy water reactor no longer operational",
+          "description": "The UN’s nuclear watchdog says Iran’s Khondab heavy water production plant is no longer operational.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/iaea-says-irans-khondab-heavy-water-reactor-no-longer-operational",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/WIDE-THUMB-Wter-facility-1774836714.png?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T02:13:21Z",
+          "content": "NewsFeed\r\nThe UNs nuclear watchdog says Irans Khondab heavy water production plant is no longer operational after suffering severe damage in an Israeli strike on March 27. The reactor, which contains… [+80 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Iranian academic describes US-Israeli attacks on Iran’s universities",
+          "description": "Doutaghi says the attack reflects a wider pattern and raises questions about what defines ‘legitimate retaliation'.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/iranian-academic-describes-us-israeli-attacks-on-irans-universities",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/university-attack-wide-clean-1774833872.png?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-30T01:24:55Z",
+          "content": "NewsFeed\r\nA post-doctoral fellow in Tehran has told Al Jazeera there was no warning before US-Israeli strikes hit the Iran University of Science and Technology on March 28. Helyeh Doutaghi says the a… [+93 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Netanyahu orders deeper Israeli invasion into Lebanon",
+          "description": "Israeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/30/netanyahu-orders-deeper-israeli-invasion-into-lebanon",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/WIDE-THUMB-Netanyahu-orders-deeper-invasion-1774832886.png?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T01:09:32Z",
+          "content": "NewsFeed\r\nIsraeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon, pushing deeper to extend what he calls a buffer zone. As Israeli forces advanc… [+98 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "John Power",
+          "title": "Oil rises above $116 a barrel as Iran accuses US of preparing invasion",
+          "description": "Crude prices continue to climb as world faces its biggest energy crisis in decades.",
+          "url": "https://www.aljazeera.com/economy/2026/3/30/oil-rises-above-116-a-barrel-as-iran-accuses-us-of-preparing-invasion",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/AP26087465268697-1774828127_3a01c1-1774829058.jpg?resize=1200%2C630&quality=80",
+          "publishedAt": "2026-03-30T00:53:36Z",
+          "content": "Oil prices have surged to their highest level in nearly two weeks amid escalation on multiple fronts of the US-Israel war on Iran.\r\nBrent crude, the global benchmark, rose more than 3 percent on Mond… [+2054 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "Iranian attack damages Kuwait power and desalination plant, kills worker",
+          "description": "Kuwaiti authorities say Indian worker killed in attack that also caused 'significant material damage' to building.",
+          "url": "https://www.aljazeera.com/news/2026/3/30/iranian-attack-damages-kuwait-power-and-desalination-plant-kills-worker",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/AFP__20260326__A4T789E__v3__HighRes__TopshotIranUsIsraelWar-1774831107.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-30T00:52:55Z",
+          "content": "An Iranian attack on a power and water desalination plant in Kuwait has killed one Indian worker and damaged a building at the site, according to Kuwaiti authorities, as regional tensions heighten am… [+2263 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "How will the Houthis’ involvement shape the war?",
+          "description": "The Yemeni group has launched missiles towards Israel in support of Iran.",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/3/29/how-will-the-houthis-involvement-shape-the-war",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774821714.jpg?resize=1920%2C1061&quality=80",
+          "publishedAt": "2026-03-29T22:46:09Z",
+          "content": "The Yemeni group has launched missiles towards Israel in support of Iran.They have threatened to join the war ever since it started a month ago.\r\nNow, Yemens Ansar Allah, also known as the Houthis, h… [+697 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "European nations criticise Israel’s death penalty plans",
+          "description": "France, Germany, Italy and the United Kingdom raise concern over 'de facto discriminatory character of the bill.'",
+          "url": "https://www.aljazeera.com/news/2026/3/29/european-nations-criticise-israels-death-penalty-plans",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-01-28T110151Z_1137712004_RC2BAJAQMX0P_RTRMADP_3_ISRAEL-PALESTINIANS-LAST-HOSTAGE-FUNERAL-1774820266.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T22:44:25Z",
+          "content": "European countries have expressed deep concern over Israeli plans to extend the application of the death penalty in a bill that could disproportionately target Palestinians.\r\nIn a statement shared by… [+1802 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera Staff",
+          "title": "Iran accuses US of plotting ground attack, as Israel steps up bombardment",
+          "description": "Power being restored after Iran's Ministry of Energy reported outages in the capital, Tehran following attacks.",
+          "url": "https://www.aljazeera.com/news/2026/3/29/iran-accuses-us-of-plotting-ground-attack-as-israel-steps-up-bombardment",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-29T113718Z_420052152_RC29EKA0EFYN_RTRMADP_3_IRAN-CRISIS-1774784393.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T22:36:05Z",
+          "content": "Irans parliament speaker has accused the United States of plotting a ground attack despite publicly pushing for a negotiated deal, as the US deploys thousands of military personnel to the Middle East… [+6267 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Israeli police bar priest from Jerusalem’s Holy Sepulchre on Palm Sunday",
+          "description": "Christians in Jerusalem marked Holy Week under wartime restrictions as Israeli police blocked the Latin Patriarch.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/29/israeli-police-bar-priest-from-jerusalems-holy-sepulchre-on-palm-sunday",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774818070.jpg?resize=1620%2C1080&quality=80",
+          "publishedAt": "2026-03-29T21:01:50Z",
+          "content": "NewsFeed\r\nChristians in Jerusalem and Gaza marked Holy Week under wartime restrictions, with Israeli police blocking the Latin Patriarch from the Holy Sepulchre for the first time in centuries. In Ga… [+124 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "A premature ceasefire risks ‘another round of conflict’ in future",
+          "description": "‘Any flawed or imperfect conclusion of the battle could have consequences just as severe as the continuation of the war'",
+          "url": "https://www.aljazeera.com/video/quotable/2026/3/29/a-premature-ceasefire-risks-another-round-of-conflict-in-future",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/horiz-thumb-1774817897.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-29T20:58:56Z",
+          "content": "Quotable\r\nRead moreAbas Aslani, senior research fellow at the Center for Middle East Strategic Studies, says a premature ceasefire in the US-Israeli war on Iran could spark another round of fighting,… [+106 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "IRGC spokesperson says Trump ‘only understands the language of force’",
+          "description": "IRGC spokesperson Ebrahim Zolfaghari dismisses threats of US ground operations.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/29/irgc-spokesperson-says-trump-only-understands-the-language-of",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774816215.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-29T20:31:14Z",
+          "content": "NewsFeed\r\nRead moreIRGC spokesperson Ebrahim Zolfaghari dismisses threats of US ground operations. He says the US president only understands force as the Pentagon prepares plans that could involve th… [+85 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Qatari TV station hit in Iran",
+          "description": "Qatar’s Al Araby network condemns an attack on its office in Tehran, which injured at least 10 people.",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/29/qatari-tv-station-hit-in-iran",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/2026-03-29T113342Z_543975889_RC29EKAB076T_RTRMADP_3_IRAN-CRISIS-1774815055.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T20:11:23Z",
+          "content": "NewsFeed\r\nQatars Al Araby network condemns an attack on its office in Tehran, which injured at least 10 people, describing it as an illegal attack against journalists."
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "Lebanon’s Catholics observe Palm Sunday under looming threat of war",
+          "description": "Lebanese Christians mark Palm Sunday with prayers, stressing shared hardships for all communities amid Israel's war.",
+          "url": "https://www.aljazeera.com/gallery/2026/3/29/lebanons-catholics-observe-palm-sunday-under-looming-threat-of-war",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/AP26088422948611-1774805886.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T19:36:26Z",
+          "content": "As Christians gathered in churches across Lebanon on Palm Sunday to commemorate Jesuss triumphal entry into Jerusalem, the escalating conflict between Israel and Hezbollah cast a sombre shadow over t… [+1735 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Al Jazeera",
+          "title": "RSF attack on Sudan’s South Kordofan kills at least 14, including children",
+          "description": "Sudan Doctors Network said RSF and allies shelled residential areas in the city of Dilling for several hours.",
+          "url": "https://www.aljazeera.com/news/2026/3/29/rsf-attack-on-sudans-south-kordofan-kills-at-least-14-including-children",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/AP25338425104951-1-1774803743.jpg?resize=1200%2C675",
+          "publishedAt": "2026-03-29T19:22:33Z",
+          "content": "An attack by Sudanese paramilitaries on South Kordofan has killed at least 14 people, including five children and two women, according to a medical group.\r\nThe Sudan Doctors Network said the Rapid Su… [+1741 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": null,
+          "title": "Cuba is not alone, deputy FM says as US threats grow",
+          "description": "Cuba's deputy foreign minister says island will resist US pressure as sanctions deepen, blackouts and tensions escalate.",
+          "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/3/29/cuba-is-not-alone-deputy-fm-says-as-us-threats-grow",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/image-1774811197.jpg?resize=1920%2C1080&quality=80",
+          "publishedAt": "2026-03-29T19:06:45Z",
+          "content": "Cubas deputy foreign minister says the island nation will resist US pressure as sanctions deepen, blackouts continue, and tensions escalate.Cuba is facing widespread blackouts as United States sancti… [+507 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Joseph Stepansky",
+          "title": "Republican Mace says Congress must approve any US troop deployment to Iran",
+          "description": "Despite general support for war, several Republicans say boots on the ground would be a political Rubicon for Trump.",
+          "url": "https://www.aljazeera.com/news/2026/3/29/republican-mace-says-congress-must-approve-any-us-troop-deployment-to-iran",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/getty_69c96a7b36-1774807675.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T18:53:33Z",
+          "content": "United States Representative Nancy Mace, a Republican, has said Congress should have a say in any decisions to deploy troops to Iran, further underscoring division within US President Donald Trumps p… [+3956 chars]"
+        },
+        {
+          "source": {
+            "id": "al-jazeera-english",
+            "name": "Al Jazeera English"
+          },
+          "author": "Edna Mohamed",
+          "title": "Zelenskyy arrives in Jordan to bolster security ties",
+          "description": "The Ukrainian leader's visit comes after Kyiv agreed to cooperate on defence with Qatar, Saudi Arabia and the UAE.",
+          "url": "https://www.aljazeera.com/news/2026/3/29/zelenskyy-arrives-in-jordan-to-bolster-security-ties",
+          "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/03/reuters_69c959a0-1774803360.jpg?resize=1920%2C1440",
+          "publishedAt": "2026-03-29T18:37:15Z",
+          "content": "Ukrainian President Volodymyr Zelenskyy has arrived in Jordan as he continues his tour to bolster defence ties in the Gulf amid the ongoing United States and Israeli war on Iran.\r\nZelenskyy announced… [+1728 chars]"
+        }
+      ]
+    }
+  }
+}
