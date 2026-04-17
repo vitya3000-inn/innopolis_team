@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build:web"
+  publish = "dist"
+
+# SPA: отдаём index.html для маршрутов клиента (React Navigation в памяти).
+# Статические файлы из dist (/_expo/*, favicon) по-прежнему отдаются как файлы.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
