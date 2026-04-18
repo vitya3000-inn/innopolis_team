@@ -76,7 +76,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         needsEmailConfirmation: false,
       };
     }
-    const { data, error } = await supabase.auth.signUp({ email: email.trim(), password });
+    const origin = typeof window !== 'undefined' && window.location?.origin ? window.location.origin : '';
+    const { data, error } = await supabase.auth.signUp({
+      email: email.trim(),
+      password,
+      options: origin
+        ? {
+            emailRedirectTo: `${origin}/`,
+          }
+        : undefined,
+    });
     if (error) {
       return { error: new Error(error.message), needsEmailConfirmation: false };
     }
@@ -92,7 +101,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!trimmed) {
       return { error: new Error('Укажите email') };
     }
-    const { error } = await supabase.auth.resetPasswordForEmail(trimmed);
+    const origin = typeof window !== 'undefined' && window.location?.origin ? window.location.origin : '';
+    const { error } = await supabase.auth.resetPasswordForEmail(trimmed, {
+      redirectTo: origin ? `${origin}/` : undefined,
+    });
     return { error: error ? new Error(error.message) : null };
   }, []);
 

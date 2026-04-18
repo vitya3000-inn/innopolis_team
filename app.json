@@ -23,8 +23,17 @@
       },
       "package": "com.newsmap.app"
     },
+    "extra": {
+      "apiUrl": "https://innopolis-team.onrender.com"
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "name": "NewsMap",
+      "shortName": "NewsMap",
+      "lang": "ru",
+      "themeColor": "#0A0A0F",
+      "backgroundColor": "#0A0A0F"
     }
   }
 }

@@ -1,5 +1,6 @@
 import React, { useMemo, type ReactNode } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { typography, spacing, type ThemeColors } from '../constants/theme';
 import { useTheme } from '../contexts/ThemeContext';
@@ -15,7 +16,8 @@ interface HeaderProps {
 
 export default function Header({ title, subtitle, showBack, onBack, headerRight }: HeaderProps) {
   const { colors } = useTheme();
-  const styles = useMemo(() => createStyles(colors), [colors]);
+  const insets = useSafeAreaInsets();
+  const styles = useMemo(() => createStyles(colors, insets.top), [colors, insets.top]);
 
   return (
     <View style={styles.container}>
@@ -37,10 +39,10 @@ export default function Header({ title, subtitle, showBack, onBack, headerRight 
   );
 }
 
-function createStyles(colors: ThemeColors) {
+function createStyles(colors: ThemeColors, insetTop: number) {
   return StyleSheet.create({
     container: {
-      paddingTop: spacing.xxxl + spacing.xl,
+      paddingTop: insetTop + spacing.xxxl + spacing.lg,
       paddingBottom: spacing.lg,
       paddingHorizontal: spacing.lg,
       backgroundColor: colors.background,
