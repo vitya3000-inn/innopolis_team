@@ -13,6 +13,7 @@ import AdminScreen from './src/screens/AdminScreen';
 import AuthScreen from './src/screens/AuthScreen';
 import { AuthProvider, useAuth } from './src/contexts/AuthContext';
 import { ThemeProvider, useTheme } from './src/contexts/ThemeContext';
+import { useMicrosoftClarity } from './src/analytics/useMicrosoftClarity';
 
 // Типы для навигации основного приложения
 export type RootStackParamList = {
@@ -114,6 +115,7 @@ function RootNavigator() {
 }
 
 export default function App() {
+  useMicrosoftClarity();
   return (
     <SafeAreaProvider>
       <ThemeProvider>

@@ -23,6 +23,9 @@
       },
       "package": "com.newsmap.app"
     },
+    "extra": {
+      "apiUrl": "https://innopolis-team.onrender.com"
+    },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",

@@ -59,7 +59,22 @@ function loadSupabaseAnonKeyForApp() {
 }
 
 const appJson = require('./app.json');
-const apiUrl = loadExpoPublicApiUrl();
+
+/** Fallback из app.json, если нет EXPO_PUBLIC_API_URL (удобно для CI/Render без UI env). */
+function apiUrlFromAppJsonExtra() {
+  const extra = appJson.expo?.extra;
+  if (extra && typeof extra.apiUrl === 'string' && extra.apiUrl.trim()) {
+    return extra.apiUrl.trim();
+  }
+  return '';
+}
+
+const apiUrl = loadExpoPublicApiUrl() || apiUrlFromAppJsonExtra();
+
+/** Чтобы Metro подставил URL в web-бандл, дублируем в process.env при отсутствии. */
+if (apiUrl && !process.env.EXPO_PUBLIC_API_URL) {
+  process.env.EXPO_PUBLIC_API_URL = apiUrl;
+}
 const supabaseUrl = loadSupabaseUrlForApp();
 const supabaseAnonKey = loadSupabaseAnonKeyForApp();
 
