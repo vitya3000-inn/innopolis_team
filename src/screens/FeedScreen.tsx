@@ -21,6 +21,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { fetchTopics, getApiBaseUrl } from '../services/newsApi';
 import { recordAppVisitOncePerMount } from '../services/visitAnalytics';
+import { syncFeedVisitPaywall, FREE_FEED_DAYS_BEFORE_PAYWALL } from '../services/feedVisitPaywall';
+import PaySubscriptionModal from '../components/PaySubscriptionModal';
 import { Topic } from '../types';
 import { dateFromYmdString, isValidUtcYmd, ymdFromPickerDate } from '../utils/archiveDate';
 
@@ -31,7 +33,7 @@ interface FeedScreenProps {
 }
 
 export default function FeedScreen({ navigation }: FeedScreenProps) {
-  const { user, authConfigured, loading: authLoading } = useAuth();
+  const { user, authConfigured, loading: authLoading, signOut, isAdmin } = useAuth();
   const { colors, mode } = useTheme();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const visitLogged = useRef(false);
@@ -46,6 +48,8 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
   /** Выбранный в календаре день (локальная календарная дата). */
   const [pickerDate, setPickerDate] = useState(() => dateFromYmdString(null));
   const [webDateDraft, setWebDateDraft] = useState('');
+  const [paywallOpen, setPaywallOpen] = useState(false);
+  const [paywallVisitDays, setPaywallVisitDays] = useState(FREE_FEED_DAYS_BEFORE_PAYWALL);
 
   const filteredTopics = selectedCategories.length === 0
     ? topics
@@ -93,6 +97,35 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
     }, 320);
     return () => clearTimeout(id);
   }, [authConfigured, authLoading, user?.id]);
+
+  /** Уникальные UTC-дни с успешной актуальной лентой; при ≥7 без подписки — модалка оплаты. Админы не ограничиваются и не пишутся в paywall-таблицы. */
+  useEffect(() => {
+    if (isAdmin) {
+      setPaywallOpen(false);
+      return;
+    }
+    if (!authConfigured || authLoading || !user?.id || archiveDateUtc !== null) return;
+    if (isLoading) return;
+    if (topics.length === 0 || loadError) return;
+    let cancelled = false;
+    void syncFeedVisitPaywall(user.id).then((r) => {
+      if (cancelled || !r) return;
+      setPaywallVisitDays(r.distinctVisitDays);
+      setPaywallOpen(r.shouldShowPaywall);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    authConfigured,
+    authLoading,
+    user?.id,
+    archiveDateUtc,
+    isLoading,
+    topics.length,
+    loadError,
+    isAdmin,
+  ]);
 
   const handleRefresh = async () => {
     setRefreshing(true);
@@ -318,6 +351,15 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
           </View>
         </ScrollView>
       )}
+
+      <PaySubscriptionModal
+        visible={paywallOpen}
+        distinctVisitDays={paywallVisitDays}
+        onSignOut={() => {
+          setPaywallOpen(false);
+          void signOut();
+        }}
+      />
     </View>
   );
 }

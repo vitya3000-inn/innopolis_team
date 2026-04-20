@@ -91,6 +91,7 @@
 | `backend/config.js` | Все переменные окружения и лимиты |
 | `backend/supabase/schema.sql` | DDL таблиц Supabase |
 | `backend/supabase/app_visits.sql` | Таблица посещений главной ленты (аналитика для админа) |
+| `backend/supabase/feed_visit_paywall.sql` | Уникальные дни с актуальной лентой + `user_entitlements.subscription_active` (экран подписки после 7 UTC-дней) |
 | `backend/appVisitStats.js` | Подсчёт посещений за период |
 
 ---

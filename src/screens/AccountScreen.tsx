@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -13,8 +13,10 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../App';
 import { typography, spacing, borderRadius, type ThemeColors } from '../constants/theme';
 import { Header } from '../components';
+import PaySubscriptionModal from '../components/PaySubscriptionModal';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { FREE_FEED_DAYS_BEFORE_PAYWALL } from '../services/feedVisitPaywall';
 
 type AccountNav = NativeStackNavigationProp<RootStackParamList, 'Account'>;
 
@@ -43,6 +45,7 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
   const { user, signOut, authConfigured, isAdmin, role } = useAuth();
   const { colors, mode, setMode } = useTheme();
   const styles = useMemo(() => createStyles(colors), [colors]);
+  const [paywallPreviewOpen, setPaywallPreviewOpen] = useState(false);
 
   const initial = useMemo(() => {
     const e = user?.email?.trim();
@@ -140,18 +143,34 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
         </View>
 
         {isAdmin ? (
-          <TouchableOpacity
-            style={styles.adminEntry}
-            onPress={() => navigation.navigate('Admin')}
-            activeOpacity={0.85}
-          >
-            <Ionicons name="construct-outline" size={22} color={colors.accentLight} />
-            <View style={styles.adminEntryBody}>
-              <Text style={styles.adminEntryTitle}>Админ-панель</Text>
-              <Text style={styles.adminEntryHint}>Обновление ленты на сервере и служебные действия</Text>
-            </View>
-            <Ionicons name="chevron-forward" size={20} color={colors.textMuted} />
-          </TouchableOpacity>
+          <>
+            <TouchableOpacity
+              style={styles.adminEntry}
+              onPress={() => navigation.navigate('Admin')}
+              activeOpacity={0.85}
+            >
+              <Ionicons name="construct-outline" size={22} color={colors.accentLight} />
+              <View style={styles.adminEntryBody}>
+                <Text style={styles.adminEntryTitle}>Админ-панель</Text>
+                <Text style={styles.adminEntryHint}>Обновление ленты на сервере и служебные действия</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={20} color={colors.textMuted} />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.adminEntry}
+              onPress={() => setPaywallPreviewOpen(true)}
+              activeOpacity={0.85}
+            >
+              <Ionicons name="eye-outline" size={22} color={colors.accentLight} />
+              <View style={styles.adminEntryBody}>
+                <Text style={styles.adminEntryTitle}>Предпросмотр экрана подписки</Text>
+                <Text style={styles.adminEntryHint}>
+                  Как видят экран оплаты пользователи после {FREE_FEED_DAYS_BEFORE_PAYWALL} уникальных дней с лентой
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={20} color={colors.textMuted} />
+            </TouchableOpacity>
+          </>
         ) : null}
 
         <View style={styles.card}>
@@ -176,6 +195,14 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
           <Text style={[styles.signOutText, styles.signOutTextGap]}>Выйти</Text>
         </TouchableOpacity>
       </ScrollView>
+
+      <PaySubscriptionModal
+        visible={paywallPreviewOpen}
+        distinctVisitDays={FREE_FEED_DAYS_BEFORE_PAYWALL}
+        onSignOut={signOut}
+        previewMode
+        onPreviewClose={() => setPaywallPreviewOpen(false)}
+      />
     </View>
   );
 }
