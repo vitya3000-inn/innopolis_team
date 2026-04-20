@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -15,6 +15,8 @@ import { typography, spacing, borderRadius, type ThemeColors } from '../constant
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { useActionCooldown } from '../hooks/useActionCooldown';
+import TurnstileHost from '../components/TurnstileHost';
+import { getTurnstileSiteKey, verifyBotChallenge } from '../services/botChallenge';
 
 function mapAuthError(message: string): string {
   const m = message.toLowerCase();
@@ -42,6 +44,29 @@ export default function AuthScreen() {
   const cooldownRegister = useActionCooldown();
   const cooldownForgot = useActionCooldown();
 
+  const turnstileSiteKey = getTurnstileSiteKey();
+  const showTurnstileWeb = Platform.OS === 'web' && authConfigured && Boolean(turnstileSiteKey);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [turnstileMountKey, setTurnstileMountKey] = useState(0);
+
+  const resetTurnstile = useCallback(() => {
+    setTurnstileToken(null);
+    setTurnstileMountKey((k) => k + 1);
+  }, []);
+
+  const onTurnstileVerify = useCallback((t: string) => {
+    setTurnstileToken(t ? t : null);
+  }, []);
+
+  const ensureBotChallengeOk = async () => {
+    const token =
+      Platform.OS === 'web' && turnstileSiteKey ? (turnstileToken?.trim() || '') : '';
+    if (Platform.OS === 'web' && turnstileSiteKey && !token) {
+      throw new Error('Нажмите «Я не робот» и дождитесь галочки.');
+    }
+    await verifyBotChallenge(token);
+  };
+
   const onSubmitLogin = () => {
     cooldownLogin(async () => {
       setError(null);
@@ -53,8 +78,16 @@ export default function AuthScreen() {
       }
       setBusy(true);
       try {
+        await ensureBotChallengeOk();
         const { error: err } = await signInWithEmail(e, password);
-        if (err) setError(mapAuthError(err.message));
+        if (err) {
+          setError(mapAuthError(err.message));
+          resetTurnstile();
+        }
+      } catch (botErr) {
+        const msg = botErr instanceof Error ? botErr.message : 'Проверка не пройдена.';
+        setError(msg);
+        resetTurnstile();
       } finally {
         setBusy(false);
       }
@@ -72,16 +105,24 @@ export default function AuthScreen() {
       }
       setBusy(true);
       try {
+        await ensureBotChallengeOk();
         const { error: err, needsEmailConfirmation } = await signUpWithEmail(e, password);
         if (err) {
           setError(mapAuthError(err.message));
+          resetTurnstile();
         } else if (needsEmailConfirmation) {
           setMessage(
             'Аккаунт создан. Подтвердите email по ссылке из письма, затем войдите. В панели Supabase можно отключить подтверждение для разработки.',
           );
+          resetTurnstile();
         } else {
           setMessage('Регистрация выполнена, вы вошли в аккаунт.');
+          resetTurnstile();
         }
+      } catch (botErr) {
+        const msg = botErr instanceof Error ? botErr.message : 'Проверка не пройдена.';
+        setError(msg);
+        resetTurnstile();
       } finally {
         setBusy(false);
       }
@@ -99,9 +140,19 @@ export default function AuthScreen() {
       }
       setBusy(true);
       try {
+        await ensureBotChallengeOk();
         const { error: err } = await requestPasswordReset(e);
-        if (err) setError(mapAuthError(err.message));
-        else setMessage('Если такой аккаунт есть, на почту уйдёт письмо со ссылкой для сброса пароля.');
+        if (err) {
+          setError(mapAuthError(err.message));
+          resetTurnstile();
+        } else {
+          setMessage('Если такой аккаунт есть, на почту уйдёт письмо со ссылкой для сброса пароля.');
+          resetTurnstile();
+        }
+      } catch (botErr) {
+        const msg = botErr instanceof Error ? botErr.message : 'Проверка не пройдена.';
+        setError(msg);
+        resetTurnstile();
       } finally {
         setBusy(false);
       }
@@ -135,6 +186,7 @@ export default function AuthScreen() {
                 setError(null);
                 setMessage(null);
                 setShowForgot(false);
+                resetTurnstile();
               }}
               disabled={busy}
             >
@@ -147,6 +199,7 @@ export default function AuthScreen() {
                 setError(null);
                 setMessage(null);
                 setShowForgot(false);
+                resetTurnstile();
               }}
               disabled={busy}
             >
@@ -202,6 +255,16 @@ export default function AuthScreen() {
             </>
           ) : null}
 
+          {showTurnstileWeb ? (
+            <View style={styles.turnstileWrap}>
+              <TurnstileHost
+                key={turnstileMountKey}
+                siteKey={turnstileSiteKey}
+                onVerify={onTurnstileVerify}
+              />
+            </View>
+          ) : null}
+
           {error ? <Text style={styles.error}>{error}</Text> : null}
           {message ? <Text style={styles.success}>{message}</Text> : null}
 
@@ -212,6 +275,7 @@ export default function AuthScreen() {
                 setShowForgot(true);
                 setError(null);
                 setMessage(null);
+                resetTurnstile();
               }}
               disabled={busy}
             >
@@ -310,6 +374,10 @@ function createStyles(colors: ThemeColors) {
     color: colors.textSecondary,
     fontSize: typography.fontSizeMD,
     marginBottom: spacing.xl,
+  },
+  turnstileWrap: {
+    marginBottom: spacing.lg,
+    alignItems: 'center',
   },
   warn: {
     color: colors.warning,

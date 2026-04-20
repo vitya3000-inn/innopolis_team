@@ -192,6 +192,15 @@ const CONFIG = {
     0.03,
     Math.min(0.35, Number(process.env.OPENAI_ARTICLE_GROUP_MIN_PAIR_SIM || 0.062)),
   ),
+  /**
+   * Cloudflare Turnstile: защита форм входа/регистрации от ботов (проверка на сервере).
+   * Задайте TURNSTILE_SECRET_KEY; на клиенте (веб) — EXPO_PUBLIC_TURNSTILE_SITE_KEY.
+   * Пока секрет не задан, эндпоинт /auth/verify-challenge отвечает ok без проверки.
+   * Для локальной разработки без капчи: BOT_CHECK_DISABLED=1 (пропускает любой запрос).
+   */
+  turnstileSecretKey: (process.env.TURNSTILE_SECRET_KEY || '').trim(),
+  botCheckDisabled: process.env.BOT_CHECK_DISABLED === '1',
+
   translation: {
     // Не требует отдельного ключа, но может быть нестабилен; при ошибках оставляем оригинал.
     googleTranslateEndpoint:

@@ -98,6 +98,11 @@ if (adminEmailsFromEnv && !process.env.EXPO_PUBLIC_ADMIN_EMAILS) {
   process.env.EXPO_PUBLIC_ADMIN_EMAILS = adminEmailsFromEnv;
 }
 
+const turnstileSiteKey = loadExpoPublicKey('EXPO_PUBLIC_TURNSTILE_SITE_KEY');
+if (turnstileSiteKey && !process.env.EXPO_PUBLIC_TURNSTILE_SITE_KEY) {
+  process.env.EXPO_PUBLIC_TURNSTILE_SITE_KEY = turnstileSiteKey;
+}
+
 module.exports = {
   expo: {
     ...appJson.expo,
@@ -119,6 +124,7 @@ module.exports = {
       apiUrl,
       supabaseUrl,
       supabaseAnonKey,
+      turnstileSiteKey,
     },
   },
 };

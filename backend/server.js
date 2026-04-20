@@ -11,6 +11,7 @@ const {
 } = require('./supabaseHistory');
 const { assertCanAdminRefresh, assertAdminRequest } = require('./adminAuth');
 const { countVisitsBetweenYmd } = require('./appVisitStats');
+const { verifyTurnstile } = require('./turnstile');
 
 function json(res, statusCode, payload) {
   res.writeHead(statusCode, {
@@ -18,6 +19,39 @@ function json(res, statusCode, payload) {
     'Access-Control-Allow-Origin': '*',
   });
   res.end(JSON.stringify(payload));
+}
+
+function readJsonBody(req, maxBytes = 65536) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    let total = 0;
+    req.on('data', (chunk) => {
+      total += chunk.length;
+      if (total > maxBytes) {
+        reject(Object.assign(new Error('payload too large'), { statusCode: 413 }));
+        return;
+      }
+      chunks.push(chunk);
+    });
+    req.on('end', () => {
+      try {
+        const raw = Buffer.concat(chunks).toString('utf8');
+        resolve(raw ? JSON.parse(raw) : {});
+      } catch (e) {
+        reject(e);
+      }
+    });
+    req.on('error', reject);
+  });
+}
+
+function clientIp(req) {
+  const xff = req.headers['x-forwarded-for'];
+  if (xff && typeof xff === 'string') {
+    const first = xff.split(',')[0].trim();
+    if (first) return first;
+  }
+  return req.socket.remoteAddress || '';
 }
 
 /**
@@ -117,6 +151,40 @@ async function handleRequest(req, res) {
     } catch (e) {
       const code = e.statusCode && Number.isFinite(e.statusCode) ? e.statusCode : 502;
       return json(res, code, { message: e.message || 'visit-stats failed' });
+    }
+  }
+
+  if (req.method === 'POST' && path === '/auth/verify-challenge') {
+    try {
+      const body = await readJsonBody(req);
+      const token = typeof body.token === 'string' ? body.token : '';
+
+      if (CONFIG.botCheckDisabled) {
+        return json(res, 200, { ok: true, skipped: true });
+      }
+
+      if (!CONFIG.turnstileSecretKey) {
+        return json(res, 200, { ok: true, skipped: true });
+      }
+
+      if (!token.trim()) {
+        return json(res, 400, {
+          ok: false,
+          message: 'Требуется токен Turnstile. Обновите страницу и пройдите проверку.',
+        });
+      }
+
+      const ok = await verifyTurnstile(CONFIG.turnstileSecretKey, token, clientIp(req));
+      if (!ok) {
+        return json(res, 403, {
+          ok: false,
+          message: 'Проверка антибота не пройдена. Обновите страницу и попробуйте снова.',
+        });
+      }
+      return json(res, 200, { ok: true });
+    } catch (e) {
+      const code = e.statusCode && Number.isFinite(e.statusCode) ? e.statusCode : 400;
+      return json(res, code, { ok: false, message: e.message || 'invalid body' });
     }
   }
 

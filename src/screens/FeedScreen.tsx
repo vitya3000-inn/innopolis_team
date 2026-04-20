@@ -52,6 +52,7 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
   const [paywallOpen, setPaywallOpen] = useState(false);
   const cooldownRefresh = useActionCooldown();
   const cooldownRetry = useActionCooldown();
+  const cooldownCategoryFilter = useActionCooldown();
 
   const filteredTopics = selectedCategories.length === 0
     ? topics
@@ -148,16 +149,20 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
   };
 
   const handleToggleCategory = (category: Category) => {
-    setSelectedCategories(prev => {
-      if (prev.includes(category)) {
-        return prev.filter(c => c !== category);
-      }
-      return [...prev, category];
+    cooldownCategoryFilter(() => {
+      setSelectedCategories(prev => {
+        if (prev.includes(category)) {
+          return prev.filter(c => c !== category);
+        }
+        return [...prev, category];
+      });
     });
   };
 
   const handleResetCategories = () => {
-    setSelectedCategories([]);
+    cooldownCategoryFilter(() => {
+      setSelectedCategories([]);
+    });
   };
 
   const handleTopicPress = (topicId: string, topicTitle: string, topicCategory: Category) => {
