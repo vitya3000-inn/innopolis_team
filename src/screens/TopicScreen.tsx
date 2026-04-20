@@ -7,6 +7,7 @@ import { RootStackParamList } from '../../App';
 import { spacing, typography, borderRadius, type ThemeColors } from '../constants/theme';
 import { Header, EventCard, CategoryBadge } from '../components';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 import { fetchTopicEvents } from '../services/newsApi';
 import { Event } from '../types';
 
@@ -27,6 +28,7 @@ export default function TopicScreen({ navigation, route }: TopicScreenProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [sortByNewest, setSortByNewest] = useState(false);
+  const cooldownRetry = useActionCooldown();
 
   const loadEvents = async () => {
     try {
@@ -53,10 +55,12 @@ export default function TopicScreen({ navigation, route }: TopicScreenProps) {
     loadEvents();
   }, [topicId, archiveDateUtc]);
 
-  const handleRetry = async () => {
-    setLoading(true);
-    setError(null);
-    await loadEvents();
+  const handleRetry = () => {
+    cooldownRetry(async () => {
+      setLoading(true);
+      setError(null);
+      await loadEvents();
+    });
   };
 
   const sortedEvents = [...events].sort((a, b) => {

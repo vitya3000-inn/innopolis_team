@@ -14,6 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { typography, spacing, borderRadius, type ThemeColors } from '../constants/theme';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 
 function mapAuthError(message: string): string {
   const m = message.toLowerCase();
@@ -37,65 +38,74 @@ export default function AuthScreen() {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [showForgot, setShowForgot] = useState(false);
+  const cooldownLogin = useActionCooldown();
+  const cooldownRegister = useActionCooldown();
+  const cooldownForgot = useActionCooldown();
 
-  const onSubmitLogin = async () => {
-    setError(null);
-    setMessage(null);
-    const e = email.trim();
-    if (!e || password.length < 6) {
-      setError('Укажите email и пароль не короче 6 символов.');
-      return;
-    }
-    setBusy(true);
-    try {
-      const { error: err } = await signInWithEmail(e, password);
-      if (err) setError(mapAuthError(err.message));
-    } finally {
-      setBusy(false);
-    }
-  };
-
-  const onSubmitRegister = async () => {
-    setError(null);
-    setMessage(null);
-    const e = email.trim();
-    if (!e || password.length < 6) {
-      setError('Укажите email и пароль не короче 6 символов.');
-      return;
-    }
-    setBusy(true);
-    try {
-      const { error: err, needsEmailConfirmation } = await signUpWithEmail(e, password);
-      if (err) {
-        setError(mapAuthError(err.message));
-      } else if (needsEmailConfirmation) {
-        setMessage(
-          'Аккаунт создан. Подтвердите email по ссылке из письма, затем войдите. В панели Supabase можно отключить подтверждение для разработки.',
-        );
-      } else {
-        setMessage('Регистрация выполнена, вы вошли в аккаунт.');
+  const onSubmitLogin = () => {
+    cooldownLogin(async () => {
+      setError(null);
+      setMessage(null);
+      const e = email.trim();
+      if (!e || password.length < 6) {
+        setError('Укажите email и пароль не короче 6 символов.');
+        return;
       }
-    } finally {
-      setBusy(false);
-    }
+      setBusy(true);
+      try {
+        const { error: err } = await signInWithEmail(e, password);
+        if (err) setError(mapAuthError(err.message));
+      } finally {
+        setBusy(false);
+      }
+    });
   };
 
-  const onForgotSubmit = async () => {
-    setError(null);
-    setMessage(null);
-    const e = email.trim();
-    if (!e) {
-      setError('Укажите email для сброса пароля.');
-      return;
-    }
-    setBusy(true);
-    try {
-      const { error: err } = await requestPasswordReset(e);
-      if (err) setError(mapAuthError(err.message));
-      else setMessage('Если такой аккаунт есть, на почту уйдёт письмо со ссылкой для сброса пароля.');
-    } finally {
-      setBusy(false);
-    }
+  const onSubmitRegister = () => {
+    cooldownRegister(async () => {
+      setError(null);
+      setMessage(null);
+      const e = email.trim();
+      if (!e || password.length < 6) {
+        setError('Укажите email и пароль не короче 6 символов.');
+        return;
+      }
+      setBusy(true);
+      try {
+        const { error: err, needsEmailConfirmation } = await signUpWithEmail(e, password);
+        if (err) {
+          setError(mapAuthError(err.message));
+        } else if (needsEmailConfirmation) {
+          setMessage(
+            'Аккаунт создан. Подтвердите email по ссылке из письма, затем войдите. В панели Supabase можно отключить подтверждение для разработки.',
+          );
+        } else {
+          setMessage('Регистрация выполнена, вы вошли в аккаунт.');
+        }
+      } finally {
+        setBusy(false);
+      }
+    });
+  };
+
+  const onForgotSubmit = () => {
+    cooldownForgot(async () => {
+      setError(null);
+      setMessage(null);
+      const e = email.trim();
+      if (!e) {
+        setError('Укажите email для сброса пароля.');
+        return;
+      }
+      setBusy(true);
+      try {
+        const { error: err } = await requestPasswordReset(e);
+        if (err) setError(mapAuthError(err.message));
+        else setMessage('Если такой аккаунт есть, на почту уйдёт письмо со ссылкой для сброса пароля.');
+      } finally {
+        setBusy(false);
+      }
+    });
   };
 
   return (

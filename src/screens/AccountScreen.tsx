@@ -16,6 +16,7 @@ import { Header } from '../components';
 import PaySubscriptionModal from '../components/PaySubscriptionModal';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 import { FREE_FEED_DAYS_BEFORE_PAYWALL } from '../services/feedVisitPaywall';
 
 type AccountNav = NativeStackNavigationProp<RootStackParamList, 'Account'>;
@@ -46,6 +47,7 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
   const { colors, mode, setMode } = useTheme();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const [paywallPreviewOpen, setPaywallPreviewOpen] = useState(false);
+  const cooldownSignOut = useActionCooldown();
 
   const initial = useMemo(() => {
     const e = user?.email?.trim();
@@ -187,7 +189,7 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
 
         <TouchableOpacity
           style={styles.signOut}
-          onPress={() => void signOut()}
+          onPress={() => cooldownSignOut(() => void signOut())}
           activeOpacity={0.85}
           accessibilityLabel="Выйти из аккаунта"
         >

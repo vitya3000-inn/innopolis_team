@@ -23,6 +23,7 @@ import { fetchTopics, getApiBaseUrl } from '../services/newsApi';
 import { recordAppVisitOncePerMount } from '../services/visitAnalytics';
 import { syncFeedVisitPaywall } from '../services/feedVisitPaywall';
 import PaySubscriptionModal from '../components/PaySubscriptionModal';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 import { Topic } from '../types';
 import { dateFromYmdString, isValidUtcYmd, ymdFromPickerDate } from '../utils/archiveDate';
 
@@ -49,6 +50,8 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
   const [pickerDate, setPickerDate] = useState(() => dateFromYmdString(null));
   const [webDateDraft, setWebDateDraft] = useState('');
   const [paywallOpen, setPaywallOpen] = useState(false);
+  const cooldownRefresh = useActionCooldown();
+  const cooldownRetry = useActionCooldown();
 
   const filteredTopics = selectedCategories.length === 0
     ? topics
@@ -125,16 +128,23 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
     isAdmin,
   ]);
 
-  const handleRefresh = async () => {
-    setRefreshing(true);
-    await loadTopics();
-    setRefreshing(false);
+  const handleRefresh = () => {
+    cooldownRefresh(async () => {
+      setRefreshing(true);
+      try {
+        await loadTopics();
+      } finally {
+        setRefreshing(false);
+      }
+    });
   };
 
-  const handleRetry = async () => {
-    setIsLoading(true);
-    setLoadError(null);
-    await loadTopics();
+  const handleRetry = () => {
+    cooldownRetry(async () => {
+      setIsLoading(true);
+      setLoadError(null);
+      await loadTopics();
+    });
   };
 
   const handleToggleCategory = (category: Category) => {

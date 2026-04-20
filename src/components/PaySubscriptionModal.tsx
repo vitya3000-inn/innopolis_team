@@ -3,6 +3,7 @@ import { Modal, View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-na
 import { Ionicons } from '@expo/vector-icons';
 import { spacing, typography, borderRadius, type ThemeColors } from '../constants/theme';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 
 /** Отображаемая цена подписки (пока без реальной оплаты). */
 export const SUBSCRIPTION_PRICE_RUB_PER_MONTH = 77;
@@ -23,13 +24,17 @@ export default function PaySubscriptionModal({
 }: PaySubscriptionModalProps) {
   const { colors } = useTheme();
   const styles = useMemo(() => createStyles(colors), [colors]);
+  const cooldownSubscribe = useActionCooldown();
+  const cooldownSignOut = useActionCooldown();
 
   const onSubscribe = () => {
-    Alert.alert(
-      'Подписка',
-      'Оплата будет подключена позже (Stripe / ЮKassa и т.д.). Пока администратор может включить доступ в Supabase: user_entitlements.subscription_active = true.',
-      [{ text: 'OK' }],
-    );
+    cooldownSubscribe(() => {
+      Alert.alert(
+        'Подписка',
+        'Оплата будет подключена позже (Stripe / ЮKassa и т.д.). Пока администратор может включить доступ в Supabase: user_entitlements.subscription_active = true.',
+        [{ text: 'OK' }],
+      );
+    });
   };
 
   return (
@@ -72,7 +77,7 @@ export default function PaySubscriptionModal({
           ) : (
             <TouchableOpacity
               style={styles.signOut}
-              onPress={() => void onSignOut()}
+              onPress={() => cooldownSignOut(() => void onSignOut())}
               activeOpacity={0.85}
             >
               <Ionicons name="log-out-outline" size={20} color={colors.textMuted} />

@@ -7,6 +7,7 @@ import { RootStackParamList } from '../../App';
 import { typography, spacing, borderRadius, type ThemeColors } from '../constants/theme';
 import { Header, OpinionCard } from '../components';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 import { fetchEvent } from '../services/newsApi';
 import { Event } from '../types';
 
@@ -26,6 +27,7 @@ export default function EventScreen({ navigation, route }: EventScreenProps) {
   const [event, setEvent] = useState<Event | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const cooldownRetry = useActionCooldown();
 
   useEffect(() => {
     let cancelled = false;
@@ -58,23 +60,25 @@ export default function EventScreen({ navigation, route }: EventScreenProps) {
     };
   }, [eventId, archiveDateUtc]);
 
-  const handleRetry = async () => {
-    setLoading(true);
-    setLoadError(null);
-    try {
-      const remote = await fetchEvent(eventId, archiveDateUtc ?? null);
-      if (remote) {
-        setEvent(remote);
-      } else {
+  const handleRetry = () => {
+    cooldownRetry(async () => {
+      setLoading(true);
+      setLoadError(null);
+      try {
+        const remote = await fetchEvent(eventId, archiveDateUtc ?? null);
+        if (remote) {
+          setEvent(remote);
+        } else {
+          setEvent(null);
+          setLoadError('Не удалось загрузить событие. Проверьте соединение или откройте ленту заново.');
+        }
+      } catch (_e) {
         setEvent(null);
-        setLoadError('Не удалось загрузить событие. Проверьте соединение или откройте ленту заново.');
+        setLoadError('Не удалось подключиться к серверу.');
+      } finally {
+        setLoading(false);
       }
-    } catch (_e) {
-      setEvent(null);
-      setLoadError('Не удалось подключиться к серверу.');
-    } finally {
-      setLoading(false);
-    }
+    });
   };
 
   if (loading) {

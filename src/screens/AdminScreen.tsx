@@ -17,6 +17,7 @@ import { typography, spacing, borderRadius, type ThemeColors } from '../constant
 import { Header } from '../components';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { useActionCooldown } from '../hooks/useActionCooldown';
 import { getVisitStats, postAdminRefresh } from '../services/adminApi';
 import { isValidUtcYmd, ymdUtcShift, ymdUtcToday } from '../utils/archiveDate';
 
@@ -39,24 +40,28 @@ export default function AdminScreen({ navigation }: AdminScreenProps) {
   const [toYmd, setToYmd] = useState(today);
   const [statsBusy, setStatsBusy] = useState(false);
   const [statsText, setStatsText] = useState<string | null>(null);
+  const cooldownRefresh = useActionCooldown();
+  const cooldownVisitStats = useActionCooldown();
 
-  const runRefresh = async () => {
-    setLog(null);
-    if (!session?.access_token) {
-      setLog('Нет access token: выйдите и войдите снова.');
-      return;
-    }
-    setBusy(true);
-    try {
-      const r = await postAdminRefresh(session.access_token, forceCache);
-      if (r.ok) {
-        setLog(`Готово. Тем на сервере: ${r.topics}. Обновите ленту свайпом на главной.`);
-      } else {
-        setLog(`Ошибка (${r.status}): ${r.message}`);
+  const runRefresh = () => {
+    cooldownRefresh(async () => {
+      setLog(null);
+      if (!session?.access_token) {
+        setLog('Нет access token: выйдите и войдите снова.');
+        return;
       }
-    } finally {
-      setBusy(false);
-    }
+      setBusy(true);
+      try {
+        const r = await postAdminRefresh(session.access_token, forceCache);
+        if (r.ok) {
+          setLog(`Готово. Тем на сервере: ${r.topics}. Обновите ленту свайпом на главной.`);
+        } else {
+          setLog(`Ошибка (${r.status}): ${r.message}`);
+        }
+      } finally {
+        setBusy(false);
+      }
+    });
   };
 
   const applyPreset = (daysInclusive: number) => {
@@ -66,29 +71,31 @@ export default function AdminScreen({ navigation }: AdminScreenProps) {
     setStatsText(null);
   };
 
-  const loadVisitStats = async () => {
-    setStatsText(null);
-    if (!session?.access_token) {
-      setStatsText('Нет access token.');
-      return;
-    }
-    if (!isValidUtcYmd(fromYmd) || !isValidUtcYmd(toYmd)) {
-      setStatsText('Введите даты в формате YYYY-MM-DD (UTC).');
-      return;
-    }
-    setStatsBusy(true);
-    try {
-      const r = await getVisitStats(session.access_token, fromYmd, toYmd);
-      if (r.ok) {
-        setStatsText(
-          `За период с ${fromYmd} по ${toYmd} (UTC календарные дни, включительно): ${r.count} посещений главной ленты.`,
-        );
-      } else {
-        setStatsText(`Ошибка (${r.status}): ${r.message}`);
+  const loadVisitStats = () => {
+    cooldownVisitStats(async () => {
+      setStatsText(null);
+      if (!session?.access_token) {
+        setStatsText('Нет access token.');
+        return;
       }
-    } finally {
-      setStatsBusy(false);
-    }
+      if (!isValidUtcYmd(fromYmd) || !isValidUtcYmd(toYmd)) {
+        setStatsText('Введите даты в формате YYYY-MM-DD (UTC).');
+        return;
+      }
+      setStatsBusy(true);
+      try {
+        const r = await getVisitStats(session.access_token, fromYmd, toYmd);
+        if (r.ok) {
+          setStatsText(
+            `За период с ${fromYmd} по ${toYmd} (UTC календарные дни, включительно): ${r.count} посещений главной ленты.`,
+          );
+        } else {
+          setStatsText(`Ошибка (${r.status}): ${r.message}`);
+        }
+      } finally {
+        setStatsBusy(false);
+      }
+    });
   };
 
   if (!authConfigured) {
@@ -149,7 +156,7 @@ export default function AdminScreen({ navigation }: AdminScreenProps) {
 
           <TouchableOpacity
             style={[styles.primary, busy && styles.primaryDisabled]}
-            onPress={() => void runRefresh()}
+            onPress={runRefresh}
             disabled={busy}
             activeOpacity={0.85}
           >
@@ -220,7 +227,7 @@ export default function AdminScreen({ navigation }: AdminScreenProps) {
           </View>
           <TouchableOpacity
             style={[styles.secondaryBtn, statsBusy && styles.primaryDisabled]}
-            onPress={() => void loadVisitStats()}
+            onPress={loadVisitStats}
             disabled={statsBusy}
           >
             {statsBusy ? (
