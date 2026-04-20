@@ -7,6 +7,25 @@ export type VerifyChallengeResult = { ok: boolean; skipped?: boolean };
  * Серверная проверка токена Cloudflare Turnstile (POST /auth/verify-challenge).
  * Секрет — только на backend (TURNSTILE_SECRET_KEY). Пустой token допустим, если проверка на сервере отключена.
  */
+export type TurnstileConfigResponse = {
+  siteKey: string | null;
+  requiresToken?: boolean;
+};
+
+/** Публичный site key с backend (если задан TURNSTILE_SITE_KEY на сервере). */
+export async function fetchTurnstileSiteKeyFromApi(): Promise<string | null> {
+  try {
+    const base = getApiBaseUrl().replace(/\/$/, '');
+    const r = await fetch(`${base}/auth/turnstile-config`);
+    if (!r.ok) return null;
+    const data = (await r.json()) as TurnstileConfigResponse;
+    if (data.siteKey && typeof data.siteKey === 'string') return data.siteKey.trim();
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export async function verifyBotChallenge(token: string): Promise<VerifyChallengeResult> {
   const base = getApiBaseUrl().replace(/\/$/, '');
   const res = await fetch(`${base}/auth/verify-challenge`, {

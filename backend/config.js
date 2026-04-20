@@ -194,11 +194,14 @@ const CONFIG = {
   ),
   /**
    * Cloudflare Turnstile: защита форм входа/регистрации от ботов (проверка на сервере).
-   * Задайте TURNSTILE_SECRET_KEY; на клиенте (веб) — EXPO_PUBLIC_TURNSTILE_SITE_KEY.
-   * Пока секрет не задан, эндпоинт /auth/verify-challenge отвечает ok без проверки.
-   * Для локальной разработки без капчи: BOT_CHECK_DISABLED=1 (пропускает любой запрос).
+   * TURNSTILE_SECRET_KEY — только на сервере (siteverify).
+   * TURNSTILE_SITE_KEY — публичный site key; отдаётся в GET /auth/turnstile-config (виджет на сайте).
+   * Дополнительно в бандле Expo: EXPO_PUBLIC_TURNSTILE_SITE_KEY или TURNSTILE_SITE_KEY в .env при сборке.
+   * Пока секрет не задан, /auth/verify-challenge отвечает ok без проверки.
+   * BOT_CHECK_DISABLED=1 — отключить проверку (разработка).
    */
   turnstileSecretKey: (process.env.TURNSTILE_SECRET_KEY || '').trim(),
+  turnstileSiteKey: (process.env.TURNSTILE_SITE_KEY || '').trim(),
   botCheckDisabled: process.env.BOT_CHECK_DISABLED === '1',
 
   translation: {

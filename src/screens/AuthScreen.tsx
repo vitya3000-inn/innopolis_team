@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -16,7 +16,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { useActionCooldown } from '../hooks/useActionCooldown';
 import TurnstileHost from '../components/TurnstileHost';
-import { getTurnstileSiteKey, verifyBotChallenge } from '../services/botChallenge';
+import { fetchTurnstileSiteKeyFromApi, getTurnstileSiteKey, verifyBotChallenge } from '../services/botChallenge';
 
 function mapAuthError(message: string): string {
   const m = message.toLowerCase();
@@ -44,7 +44,28 @@ export default function AuthScreen() {
   const cooldownRegister = useActionCooldown();
   const cooldownForgot = useActionCooldown();
 
-  const turnstileSiteKey = getTurnstileSiteKey();
+  const [remoteTurnstileSiteKey, setRemoteTurnstileSiteKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (Platform.OS !== 'web' || !authConfigured) {
+      setRemoteTurnstileSiteKey(null);
+      return;
+    }
+    const bundled = getTurnstileSiteKey();
+    if (bundled) {
+      setRemoteTurnstileSiteKey(null);
+      return;
+    }
+    let cancelled = false;
+    void fetchTurnstileSiteKeyFromApi().then((k) => {
+      if (!cancelled) setRemoteTurnstileSiteKey(k);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [authConfigured]);
+
+  const turnstileSiteKey = getTurnstileSiteKey() || remoteTurnstileSiteKey || '';
   const showTurnstileWeb = Platform.OS === 'web' && authConfigured && Boolean(turnstileSiteKey);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [turnstileMountKey, setTurnstileMountKey] = useState(0);

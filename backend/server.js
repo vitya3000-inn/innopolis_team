@@ -95,6 +95,12 @@ async function handleRequest(req, res) {
     return json(res, 200, { ok: true, service: 'newsmaker-backend' });
   }
 
+  if (req.method === 'GET' && path === '/auth/turnstile-config') {
+    const siteKey = CONFIG.turnstileSiteKey ? CONFIG.turnstileSiteKey : null;
+    const requiresToken = Boolean(CONFIG.turnstileSecretKey) && !CONFIG.botCheckDisabled;
+    return json(res, 200, { siteKey, requiresToken });
+  }
+
   if (req.method === 'GET' && path === '/topics') {
     try {
       const state = await loadStateForQuery(parsed);

@@ -98,7 +98,15 @@ if (adminEmailsFromEnv && !process.env.EXPO_PUBLIC_ADMIN_EMAILS) {
   process.env.EXPO_PUBLIC_ADMIN_EMAILS = adminEmailsFromEnv;
 }
 
-const turnstileSiteKey = loadExpoPublicKey('EXPO_PUBLIC_TURNSTILE_SITE_KEY');
+function loadTurnstileSiteKeyForApp() {
+  const pub = loadExpoPublicKey('EXPO_PUBLIC_TURNSTILE_SITE_KEY');
+  if (pub) return pub;
+  const fromFile = readEnvValueFromFile('TURNSTILE_SITE_KEY');
+  if (fromFile && String(fromFile).trim()) return String(fromFile).trim();
+  return '';
+}
+
+const turnstileSiteKey = loadTurnstileSiteKeyForApp();
 if (turnstileSiteKey && !process.env.EXPO_PUBLIC_TURNSTILE_SITE_KEY) {
   process.env.EXPO_PUBLIC_TURNSTILE_SITE_KEY = turnstileSiteKey;
 }
