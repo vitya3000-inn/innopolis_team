@@ -13,6 +13,7 @@ import AdminScreen from './src/screens/AdminScreen';
 import AuthScreen from './src/screens/AuthScreen';
 import { AuthProvider, useAuth } from './src/contexts/AuthContext';
 import { ThemeProvider, useTheme } from './src/contexts/ThemeContext';
+import { ToastProvider } from './src/contexts/ToastContext';
 import { useMicrosoftClarity } from './src/analytics/useMicrosoftClarity';
 
 // Типы для навигации основного приложения
@@ -119,9 +120,11 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <ThemeProvider>
-        <AuthProvider>
-          <RootNavigator />
-        </AuthProvider>
+        <ToastProvider>
+          <AuthProvider>
+            <RootNavigator />
+          </AuthProvider>
+        </ToastProvider>
       </ThemeProvider>
     </SafeAreaProvider>
   );
