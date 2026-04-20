@@ -3,11 +3,12 @@ import { Modal, View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-na
 import { Ionicons } from '@expo/vector-icons';
 import { spacing, typography, borderRadius, type ThemeColors } from '../constants/theme';
 import { useTheme } from '../contexts/ThemeContext';
-import { FREE_FEED_DAYS_BEFORE_PAYWALL } from '../services/feedVisitPaywall';
+
+/** Отображаемая цена подписки (пока без реальной оплаты). */
+export const SUBSCRIPTION_PRICE_RUB_PER_MONTH = 77;
 
 type PaySubscriptionModalProps = {
   visible: boolean;
-  distinctVisitDays: number;
   onSignOut: () => void;
   /** Из личного кабинета админа: только просмотр, кнопка «Закрыть», без блокировки ленты. */
   previewMode?: boolean;
@@ -16,7 +17,6 @@ type PaySubscriptionModalProps = {
 
 export default function PaySubscriptionModal({
   visible,
-  distinctVisitDays,
   onSignOut,
   previewMode = false,
   onPreviewClose,
@@ -41,13 +41,20 @@ export default function PaySubscriptionModal({
           {previewMode ? (
             <Text style={styles.previewBadge}>Предпросмотр (администратор)</Text>
           ) : null}
+
+          <View style={styles.priceBlock}>
+            <Text style={styles.priceValue}>{SUBSCRIPTION_PRICE_RUB_PER_MONTH} ₽</Text>
+            <Text style={styles.pricePeriod}>в месяц</Text>
+          </View>
+
           <Text style={styles.lead}>
-            Вы открывали актуальную ленту {distinctVisitDays} {daysLabel(distinctVisitDays)}. Бесплатно
-            доступны первые {FREE_FEED_DAYS_BEFORE_PAYWALL} уникальных дней (по UTC, не больше одного
-            засчёта в день).
+            Спасибо, что пользовались NewsMap. Бесплатный пробный период завершился — надеемся, лента была
+            вам полезна. Чтобы по-прежнему открывать актуальную картину дня без ограничений, оформите
+            подписку: так вы поддерживаете сервис и сохраняете полный доступ к материалам.
           </Text>
           <Text style={styles.hint}>
-            Оформите подписку, чтобы продолжить пользоваться лентой без ограничений.
+            После подключения оплаты подписку можно будет продлевать автоматически и отменять в любой
+            момент в настройках.
           </Text>
 
           <TouchableOpacity style={styles.primary} onPress={onSubscribe} activeOpacity={0.9}>
@@ -78,15 +85,6 @@ export default function PaySubscriptionModal({
   );
 }
 
-function daysLabel(n: number): string {
-  const m10 = n % 10;
-  const m100 = n % 100;
-  if (m100 >= 11 && m100 <= 14) return 'дней';
-  if (m10 === 1) return 'день';
-  if (m10 >= 2 && m10 <= 4) return 'дня';
-  return 'дней';
-}
-
 function createStyles(colors: ThemeColors) {
   return StyleSheet.create({
     backdrop: {
@@ -114,7 +112,7 @@ function createStyles(colors: ThemeColors) {
       fontSize: typography.fontSizeXXL,
       fontWeight: typography.fontWeightBold,
       textAlign: 'center',
-      marginBottom: spacing.sm,
+      marginBottom: spacing.md,
     },
     previewBadge: {
       alignSelf: 'center',
@@ -123,12 +121,32 @@ function createStyles(colors: ThemeColors) {
       fontWeight: typography.fontWeightSemiBold,
       marginBottom: spacing.md,
     },
+    priceBlock: {
+      alignItems: 'center',
+      marginBottom: spacing.lg,
+      paddingVertical: spacing.md,
+      paddingHorizontal: spacing.lg,
+      backgroundColor: colors.backgroundTertiary,
+      borderRadius: borderRadius.md,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    priceValue: {
+      color: colors.textPrimary,
+      fontSize: typography.fontSizeHero,
+      fontWeight: typography.fontWeightBold,
+    },
+    pricePeriod: {
+      color: colors.textMuted,
+      fontSize: typography.fontSizeMD,
+      marginTop: spacing.xs,
+    },
     lead: {
       color: colors.textSecondary,
       fontSize: typography.fontSizeMD,
       lineHeight: typography.fontSizeMD * typography.lineHeightRelaxed,
       textAlign: 'center',
-      marginBottom: spacing.sm,
+      marginBottom: spacing.md,
     },
     hint: {
       color: colors.textMuted,

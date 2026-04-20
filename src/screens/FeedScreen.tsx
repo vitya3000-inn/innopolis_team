@@ -21,7 +21,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { fetchTopics, getApiBaseUrl } from '../services/newsApi';
 import { recordAppVisitOncePerMount } from '../services/visitAnalytics';
-import { syncFeedVisitPaywall, FREE_FEED_DAYS_BEFORE_PAYWALL } from '../services/feedVisitPaywall';
+import { syncFeedVisitPaywall } from '../services/feedVisitPaywall';
 import PaySubscriptionModal from '../components/PaySubscriptionModal';
 import { Topic } from '../types';
 import { dateFromYmdString, isValidUtcYmd, ymdFromPickerDate } from '../utils/archiveDate';
@@ -49,7 +49,6 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
   const [pickerDate, setPickerDate] = useState(() => dateFromYmdString(null));
   const [webDateDraft, setWebDateDraft] = useState('');
   const [paywallOpen, setPaywallOpen] = useState(false);
-  const [paywallVisitDays, setPaywallVisitDays] = useState(FREE_FEED_DAYS_BEFORE_PAYWALL);
 
   const filteredTopics = selectedCategories.length === 0
     ? topics
@@ -110,7 +109,6 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
     let cancelled = false;
     void syncFeedVisitPaywall(user.id).then((r) => {
       if (cancelled || !r) return;
-      setPaywallVisitDays(r.distinctVisitDays);
       setPaywallOpen(r.shouldShowPaywall);
     });
     return () => {
@@ -354,7 +352,6 @@ export default function FeedScreen({ navigation }: FeedScreenProps) {
 
       <PaySubscriptionModal
         visible={paywallOpen}
-        distinctVisitDays={paywallVisitDays}
         onSignOut={() => {
           setPaywallOpen(false);
           void signOut();

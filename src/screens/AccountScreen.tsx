@@ -198,7 +198,6 @@ export default function AccountScreen({ navigation }: AccountScreenProps) {
 
       <PaySubscriptionModal
         visible={paywallPreviewOpen}
-        distinctVisitDays={FREE_FEED_DAYS_BEFORE_PAYWALL}
         onSignOut={signOut}
         previewMode
         onPreviewClose={() => setPaywallPreviewOpen(false)}
